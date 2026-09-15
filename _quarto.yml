@@ -1,0 +1,11 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "PSTC 1340: Principles & Methods of GIS"
+
+format:
+  html:
+    theme: default
+    css: gis_style.scss

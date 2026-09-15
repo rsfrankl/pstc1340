@@ -1,0 +1,10 @@
+---
+title: "PSTC 1340: Principles & Methods of GIS"
+listing:
+  contents: Lecture_*/*.qmd
+  type: default
+  sort: false
+  fields: [title, subtitle]
+---
+
+Lecture slides for PSTC 1340, Fall 2026.
