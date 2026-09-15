@@ -7,4 +7,4 @@ listing:
   fields: [title, subtitle]
 ---
 
-Lecture slides for PSTC 1340, Fall 2026.
+Lecture slides for PSTC 1340, Fall 2026:

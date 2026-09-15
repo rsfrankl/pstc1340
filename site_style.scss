@@ -1,0 +1,15 @@
+/*-- scss:defaults --*/
+$body-bg: #fbfbfb;
+$body-color: #4e5767;
+$link-color: #1F5673;
+$font-family-sans-serif: "Futura", "Jost", "Trebuchet MS", sans-serif;
+
+/*-- scss:rules --*/
+h1, h2, h3, h4, .title {
+  color: #425823;
+  font-weight: 900;
+}
+
+a:hover, a:focus { color: #425823 !important; }
+
+.listing-title, .listing-title a { color: #1F5673 !important; }
