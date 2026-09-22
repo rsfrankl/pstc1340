@@ -410,7 +410,7 @@ Or discrete data
   - Compromise projections
 
 ## Orthographic
-Conic (obviously) and preserves area while distoring shape
+A globe!
 
 ```{r}
 #| echo: false
