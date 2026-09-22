@@ -1,10 +1,248 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PSTC 1340: Principles & Methods of GIS",
+    "objectID": "Lecture_2/lecture_2.html#section",
+    "href": "Lecture_2/lecture_2.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
     "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Source: https://xkcd.com/2613/"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#todays-agenda",
+    "href": "Lecture_2/lecture_2.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Lingering Questions?\nLecture:\n\nHow does a GIS organize spatial data?\nCoordinate systems and projections\n\nReading discussion\nLab"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#organizing-spatial-data-in-a-gis",
+    "href": "Lecture_2/lecture_2.html#organizing-spatial-data-in-a-gis",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Organizing Spatial Data in a GIS",
+    "text": "Organizing Spatial Data in a GIS\n\nA GIS doesn’t save information as maps\n\nRather, we tell the GIS how to locate objects in relation to other objects and in space\n\nThings to be aware of:\n\nYour spatial data model\nThe relationships your objects have with each other in the real world\n\ne.g. street intersections or shared state borders\nWe call this “topology”"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#spatial-data-models",
+    "href": "Lecture_2/lecture_2.html#spatial-data-models",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial Data Models",
+    "text": "Spatial Data Models\nMost common are vector and raster"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#spatial-data-models-1",
+    "href": "Lecture_2/lecture_2.html#spatial-data-models-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial Data Models",
+    "text": "Spatial Data Models\nMost common are vector and raster"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#spatial-data-models-2",
+    "href": "Lecture_2/lecture_2.html#spatial-data-models-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial Data Models",
+    "text": "Spatial Data Models"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#vector-model",
+    "href": "Lecture_2/lecture_2.html#vector-model",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Vector Model",
+    "text": "Vector Model\n\nFeatures are stored as discrete points, lines or polygons\nAll are combinations of nodes and/or vertices\nLocations are recorded as X,Y coordinates"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#vector-model-1",
+    "href": "Lecture_2/lecture_2.html#vector-model-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Vector Model",
+    "text": "Vector Model\n\nFeatures are stored as discrete points, lines or polygons\nAll are combinations of nodes and/or vertices\nLocations are recorded as X,Y coordinates"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#the-attribute-table",
+    "href": "Lecture_2/lecture_2.html#the-attribute-table",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "The Attribute Table",
+    "text": "The Attribute Table\n\nEach feature – point, line, or polygon – is dynamically linked to the “attribute table” or set of variables\n\nFor example, you could have a dataset of cities, represented as points, and the attribute table might contain characteristics of the city – population, for example"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#types-of-feature-classes",
+    "href": "Lecture_2/lecture_2.html#types-of-feature-classes",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of Feature Classes",
+    "text": "Types of Feature Classes\n\n\n\nFeature classes – or datasets of spatial objects – contain only the same types of objects\n\nThis means only points or lines or polygons\nAnd since they all share the same attribute table, they should be the same thing\n\nSo, no combining cities and septic systems in one feature class, even though both might be points\nEach group of features is referred to as a feature class"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#this-is-our-nations-capital",
+    "href": "Lecture_2/lecture_2.html#this-is-our-nations-capital",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "This is our Nation’s Capital…",
+    "text": "This is our Nation’s Capital…\n\n\n…But what can we say about the type of spatial data the map shows?\nKnowing whether we’re working with lines or polygons is key to understanding what types of analysis we can do."
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#why-we-like-the-vector-model",
+    "href": "Lecture_2/lecture_2.html#why-we-like-the-vector-model",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Why We Like the Vector Model",
+    "text": "Why We Like the Vector Model\n\nFeatures can be located precisely\nWe can store lots of information (variables or attributes) about each feature\nUseful for many types of map-making\nPerfect for types of analysis, such as areas, lengths, or connections\nUsed a lot in the social sciences"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#raster-data-model",
+    "href": "Lecture_2/lecture_2.html#raster-data-model",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\n\n\n\nSub-divides a study area into square pixels – rows and columns\nOnly need the location of the upper left-hand corner and all other locations are implicit, assuming you know your pixel size\nOnly one value is recorded for each pixel\n\nFor example, temperature, precipitation, or land use type"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#raster-data-model-1",
+    "href": "Lecture_2/lecture_2.html#raster-data-model-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\nSo long as the x, y location is georeferenced (placed on the surface of the earth), we can locate each other pixel, too"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#raster-data-model-2",
+    "href": "Lecture_2/lecture_2.html#raster-data-model-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\n\nThere are at least two contexts in which raster data may make more sense than vector data:\n\nWhen you’re working with continuous data, like the types of information mentioned above: e.g. precipitation or temperature\n\nOften, these types of information weren’t collected for administrative units, anyway, so it makes little sense to organize them that way\n\nApplications that involve the environmental sciences (see reason 1 for a good reason why)\n\n\n\n\nRemember that rasters don’t have attribute tables – each cell or pixel is only going to have one value attached to it"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#raster-data-model-3",
+    "href": "Lecture_2/lecture_2.html#raster-data-model-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\nRasters can be used to represent continuous data"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#raster-data-model-4",
+    "href": "Lecture_2/lecture_2.html#raster-data-model-4",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Data Model",
+    "text": "Raster Data Model\nOr discrete data"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#why-we-like-the-raster-model",
+    "href": "Lecture_2/lecture_2.html#why-we-like-the-raster-model",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Why We Like the Raster Model",
+    "text": "Why We Like the Raster Model\n\nBest for continuous data\nAnalysis can sometimes be faster\nAnd some types of analysis require raster data\nRemember: pixel size (or resolution) matters!"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#vector-versus-raster",
+    "href": "Lecture_2/lecture_2.html#vector-versus-raster",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Vector versus raster",
+    "text": "Vector versus raster\n\n\n\n\n\n“Yes, raster is faster, but raster is vaster, and vector just seems more correcter.” – Dana Tomlin"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#picture-files",
+    "href": "Lecture_2/lecture_2.html#picture-files",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Picture files",
+    "text": "Picture files\n\nSource: https://www.loc.gov/resource/g3774pm.g3774pm_g08099189901/?sp=3\nAny map picture file could potentially be used as a GIS data source\nBUT, the picture has to be georeferenced, or registered to a known coordinate system, first"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#the-gis-commandments",
+    "href": "Lecture_2/lecture_2.html#the-gis-commandments",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "The GIS Commandments",
+    "text": "The GIS Commandments\n\nThou shalt not (ever) use Windows to copy or move files! (Use Catalog)\nThou shalt not work from the Downloads folder.\nThou shalt understand how file directories are structured (even if you wish you didn’t need to).\nKnow your projection.\nSave projects early and often!\nThou shalt google (look things up when you have questions).\nEmbrace mistakes (you will make mistakes)."
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#arcgis-pro-and-file-types-1",
+    "href": "Lecture_2/lecture_2.html#arcgis-pro-and-file-types-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "ArcGIS Pro and File Types",
+    "text": "ArcGIS Pro and File Types\n\nWhen you do work in ArcGIS Pro, your efforts are saved as a project\n\nYour project links to the data you’ve added, but does not actually include said data\nIf you copy your project to another location, without moving the individual layers as well, your project will be empty when you open it\nArcGIS Pro tries to help you out by creating a project folder and default geodatabase when you start a project"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#arcgis-pro-and-file-types-2",
+    "href": "Lecture_2/lecture_2.html#arcgis-pro-and-file-types-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "ArcGIS Pro and File Types",
+    "text": "ArcGIS Pro and File Types\n\nVector data are typically stored as shapefiles or as elements of a geodatabase or geopackage, although other formats exist\n\nShapefiles are typically recognized by other GIS software applications and this is the term often used to refer to spatial data\nGeodatabases can include feature classes, but also raster data and even spreadsheet (e.g. MS Excel) data\n\nThese look like a cylinder in ArcGIS Pro; when you expand the cylinder, you see all the data included in the geodatabase\nThis is an Esri proprietary file format\n\nGeopackages are similar to geodatabases\n\nBoth shapefiles and geodatabases will look unrecognizable in Windows"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#topology-modeling-feature-behavior",
+    "href": "Lecture_2/lecture_2.html#topology-modeling-feature-behavior",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Topology – Modeling Feature Behavior",
+    "text": "Topology – Modeling Feature Behavior\n\nTopology sets the rules of behavior for features in a feature class\nBasic topology rules deal with adjacency, connectivity, overlap, and intersection\nA classic example is road networks"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#section-1",
+    "href": "Lecture_2/lecture_2.html#section-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "We all understand where the U.S. is:\n\nImplicitly, we step out of Minnesota to the north and we’re in Canada\nOur data need to reflect this: adjacency\nOne border\n\nOr street intersections"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#it-all-comes-down-to-logical-consistency",
+    "href": "Lecture_2/lecture_2.html#it-all-comes-down-to-logical-consistency",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "It All Comes Down to Logical Consistency",
+    "text": "It All Comes Down to Logical Consistency\n\nHow well do features mimic real-world situations?\nAs users, rather than generators, of data, we often have no control over the quality of the data we have to work with\nMany of these issues won’t be apparent if we’re only making maps, but can wreak havoc with analysis"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#how-to-we-translate-spherical-locations-to-map-locations",
+    "href": "Lecture_2/lecture_2.html#how-to-we-translate-spherical-locations-to-map-locations",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How to we translate spherical locations to map locations?",
+    "text": "How to we translate spherical locations to map locations?\n\nTo do that, we need to discuss:\n\nCharacterizing the shape of the earth\nProjections\nCoordinate Systems"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#the-shape-of-the-earth",
+    "href": "Lecture_2/lecture_2.html#the-shape-of-the-earth",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "The shape of the earth",
+    "text": "The shape of the earth\n\nObviously not flat, but not perfectly round either\n\nMore like an oblate spheroid or ellipsoid (someone sat on the top of it a bit)\n\nAnd as technology has advanced, we’ve been able to be more precise about the exact shape\n\nNow satellites, rather than just surveying\n\nA datum is an estimate of the ellipsoid and measures the elevation of every point on earth\n\nRecent datums use the center of the earth as the reference point, not a point on the ground\nNorth American Datum of 1983 (NAD83) is most recent datum for the US\nAt large scales, differences in datum used can make a big difference\n\nGeoids, based on science of geodesy, provide exact measurements of earth’s size and shape (and gravitational fields)\n\nRarely necessary in GIS"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#how-do-we-find-locations-on-the-earth",
+    "href": "Lecture_2/lecture_2.html#how-do-we-find-locations-on-the-earth",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How do we find locations on the Earth?",
+    "text": "How do we find locations on the Earth?\n\n\n\n\n\n\nLatitude: parallels, measured north and south of the equator\nLongitude: meridians are like orange segments, measured against the prime meridian"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#coordinate-systems-locating-a-place-on-the-surface-of-the-earth",
+    "href": "Lecture_2/lecture_2.html#coordinate-systems-locating-a-place-on-the-surface-of-the-earth",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Coordinate Systems – locating a place on the surface of the earth",
+    "text": "Coordinate Systems – locating a place on the surface of the earth\n\nGeographic Coordinates – latitude and longitude, expressed as numbers\nUniversal Transverse Mercator (UTM) – Uses transverse Mercator projection, which is accurate in North-South strips.\n\nDivides the earth into 60 zones.\nNot used in polar regions – too much distortion\n\nMilitary Grid – Uses a lettering system (CDE, 123) with 60 zones\nState Plane System – Used for a lot of geographic information in the US.\n\nBased on a different map of each state, and each state is divided into a number of zones, depending how large it is (one for RI).\nVery little distortion, because of the small areas covered.\nCan be a pain if you’re working with data for more than one state."
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#map-projection",
+    "href": "Lecture_2/lecture_2.html#map-projection",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Map Projection",
+    "text": "Map Projection\n\nPutting the round earth onto a flat surface (paper, computer screen, projector screen)\nSphere is “projected” onto plane, cone, or cylinder\n\nAzimuthal\nConic\nCylindrical\n\nHow do these shapes intersect the earth’s surface?"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#section-2",
+    "href": "Lecture_2/lecture_2.html#section-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Assembled from USGS graphics: http://egsc.usgs.gov/isb//pubs/MapProjections/projections.html"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#types-of-projections",
+    "href": "Lecture_2/lecture_2.html#types-of-projections",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of Projections",
+    "text": "Types of Projections\n\nProjections can be measured by how they distort the earth’s surface:\n\nConformal projections are shape-preserving\n\nLines of latitude and longitude will meet at right angles\nThey preserve direction and so are used in cases where measuring direction is important\n\nEqual area or equivalent projections preserve area\n\nArea is portrayed correctly, as on a sphere\n\nDistance preserving projections (but only along a few lines\nCompromise projections"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#important-to-remember",
+    "href": "Lecture_2/lecture_2.html#important-to-remember",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Important to remember:",
+    "text": "Important to remember:\n\nAny projection distorts either distance, shape, area, or direction. No projection is perfect\nThe larger the area involved, the larger the impact of map errors due to projection\nProjection used should suit the GIS application\nMaps must be in the same projection if they’ll be overlayed or stitched together\nUsually a GIS can switch from one projection to another"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#why-does-this-matter",
+    "href": "Lecture_2/lecture_2.html#why-does-this-matter",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Why does this matter?",
+    "text": "Why does this matter?\n\n\n\n\nWhen we add data to our GIS from different sources, we need the information to “line up” nicely – so we need to know the projection and it should be the same for all layers\nIf the type of analysis we’re going to be doing involves area measurement or distance, for example, we want to make sure we’re using an appropriate projection."
   },
   {
     "objectID": "Lecture_1/lecture_1.html#todays-agenda",
@@ -145,5 +383,12 @@
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Testing Out Our Work Environment",
     "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSTC 1340: Principles & Methods of GIS",
+    "section": "",
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
