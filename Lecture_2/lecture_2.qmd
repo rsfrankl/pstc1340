@@ -13,6 +13,80 @@ format:
     embed-resources: true
 ---
 
+```{r}
+#| label: setup
+#| include: false
+
+library(sf)
+library(ggplot2)
+
+# load + prep the country data ONCE (all plates reuse it)
+world <- st_read("../data/world_boundaries.gpkg",
+                 layer = "World Bank Official Boundaries - Admin 0_all_layers",
+                 quiet = TRUE)
+sf_use_s2(FALSE)
+world <- st_make_valid(world)
+world <- world[!st_is_empty(st_geometry(world)), ]
+
+make_plate <- function(crs,
+                       clip_lat   = 90,      # 85 for Mercator; 90 otherwise
+                       lon_min = -180, lon_max = 180,
+                       lat_min = -clip_lat, lat_max = clip_lat,
+                       ortho      = FALSE,   # TRUE only for orthographic
+                       ind_radius = 500000,  # circle radius on the sphere, meters
+                       col_land   = "#4e5767",
+                       col_edge   = "gray",
+                       col_grat   = "#42affa",
+                       ind_fill   = "#C4704A",
+                       ind_edge   = "#8a3f22") {
+
+  sf_use_s2(FALSE)
+
+  bbox_ll <- st_bbox(c(xmin = lon_min, ymin = lat_min,
+                       xmax = lon_max, ymax = lat_max), crs = st_crs(4326))
+
+ # land + graticule, cropped then projected
+  land <- st_crop(world, bbox_ll)
+  land <- st_make_valid(land)
+  land <- st_simplify(st_transform(land, crs), dTolerance = 10000)
+  grat <- st_transform(st_crop(
+            st_graticule(lon = seq(-180, 180, 30),
+                         lat = seq(-90, 90, 30), crs = st_crs(4326)),
+            bbox_ll), crs)
+
+  # Tissot circles: equal-area on the sphere, then reprojected
+  centres <- st_as_sf(expand.grid(lon = seq(-150, 150, 60),
+                                  lat = seq(-60, 60, 30)),
+                      coords = c("lon", "lat"), crs = 4326)
+  sf_use_s2(TRUE)
+  circles <- st_buffer(centres, dist = ind_radius)
+  sf_use_s2(FALSE)
+  circles <- st_transform(circles, crs)
+
+  # orthographic only: drop far-side geometry that would smear
+  if (ortho) {
+    land    <- suppressWarnings(st_make_valid(land))
+    land    <- land[!st_is_empty(land), ]
+    grat    <- grat[!st_is_empty(grat), ]
+    circles <- circles[!st_is_empty(circles), ]
+  }
+
+  lim <- st_bbox(grat)
+
+  ggplot() +
+    geom_sf(data = land,    fill = col_land, colour = col_edge, linewidth = 0.1) +
+    geom_sf(data = circles, fill = ind_fill, colour = ind_edge,
+            linewidth = 0.3, alpha = 0.7) +
+    geom_sf(data = grat,    colour = col_grat, linewidth = 0.3) +
+    coord_sf(xlim = c(lim["xmin"], lim["xmax"]),
+             ylim = c(lim["ymin"], lim["ymax"]), expand = FALSE) +
+    theme_void() +
+    theme(panel.background = element_rect(fill = NA, colour = NA),
+          plot.background  = element_rect(fill = NA, colour = NA))
+}
+
+```
+
 ## 
 
 ![Source: https://xkcd.com/2613/](images/image1.png){alt="xkcd comic"}
@@ -324,10 +398,6 @@ Or discrete data
   - Cylindrical
 - How do these shapes intersect the earth's surface?
 
-## 
-
-![Assembled from USGS graphics: [http://egsc.usgs.gov/isb//pubs/MapProjections/projections.html](http://egsc.usgs.gov/isb//pubs/MapProjections/projections.html)](images/image18.jpg){alt="visual showing different types of projections"}
-
 ## Types of Projections
 
 - Projections can be measured by how they distort the earth's surface:
@@ -338,6 +408,90 @@ Or discrete data
     - Area is portrayed correctly, as on a sphere
   - **Distance preserving** projections (but only along a few lines
   - Compromise projections
+
+## Orthographic
+Conic (obviously) and preserves area while distoring shape
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=ortho +lat_0=40 +lon_0=-100 +datum=WGS84 +units=m +no_defs",
+           ortho = TRUE)
+```
+
+## Mercator
+Cylindrical and shape (and angle) preserving
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=merc +lon_0=0 +datum=WGS84 +units=m +no_defs", clip_lat = 85)
+
+```
+
+## Gall-Peters
+Cylindrical and equal-area (but shape-distorting)
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=cea +lat_ts=45 +datum=WGS84 +units=m +no_defs")
+
+```
+
+## Albers Equal-Area Conic
+Conic (obviously) and preserves area while distoring shape
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=aea +lat_1=29.5 +lat_2=45.5 +lon_0=-96 +datum=WGS84 +units=m +no_defs",
+           lon_min = -170, lon_max = -50, lat_min = 15, lat_max = 75)
+```
+
+## Lambert Conformal Conic
+Conic but preserving shape (and angle)
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=lcc +lat_1=33 +lat_2=45 +lon_0=-96 +datum=WGS84 +units=m +no_defs",
+           lon_min = -180, lon_max = 0, lat_min = 0, lat_max = 85)
+```
+
+## Lambert Azimuthal Equal-Area
+Planar (preserves area while distorting shape)
+
+```{r}
+#| echo: false
+#| dev: "svg"
+#| dev.args: !expr list(bg = "transparent")
+#| fig-width: 7
+#| fig-height: 7
+
+make_plate("+proj=laea +lat_0=40 +lon_0=-100 +datum=WGS84 +units=m +no_defs",
+           lon_min = -180, lon_max = 0, lat_min = 0, lat_max = 85)
+```
 
 ## Important to remember:
 

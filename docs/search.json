@@ -217,18 +217,53 @@
     "text": "Map Projection\n\nPutting the round earth onto a flat surface (paper, computer screen, projector screen)\nSphere is “projected” onto plane, cone, or cylinder\n\nAzimuthal\nConic\nCylindrical\n\nHow do these shapes intersect the earth’s surface?"
   },
   {
-    "objectID": "Lecture_2/lecture_2.html#section-2",
-    "href": "Lecture_2/lecture_2.html#section-2",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "",
-    "text": "Assembled from USGS graphics: http://egsc.usgs.gov/isb//pubs/MapProjections/projections.html"
-  },
-  {
     "objectID": "Lecture_2/lecture_2.html#types-of-projections",
     "href": "Lecture_2/lecture_2.html#types-of-projections",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Types of Projections",
     "text": "Types of Projections\n\nProjections can be measured by how they distort the earth’s surface:\n\nConformal projections are shape-preserving\n\nLines of latitude and longitude will meet at right angles\nThey preserve direction and so are used in cases where measuring direction is important\n\nEqual area or equivalent projections preserve area\n\nArea is portrayed correctly, as on a sphere\n\nDistance preserving projections (but only along a few lines\nCompromise projections"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#orthographic",
+    "href": "Lecture_2/lecture_2.html#orthographic",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Orthographic",
+    "text": "Orthographic\nConic (obviously) and preserves area while distoring shape"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#mercator",
+    "href": "Lecture_2/lecture_2.html#mercator",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Mercator",
+    "text": "Mercator\nCylindrical and shape (and angle) preserving"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#gall-peters",
+    "href": "Lecture_2/lecture_2.html#gall-peters",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Gall-Peters",
+    "text": "Gall-Peters\nCylindrical and equal-area (but shape-distorting)"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#albers-equal-area-conic",
+    "href": "Lecture_2/lecture_2.html#albers-equal-area-conic",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Albers Equal-Area Conic",
+    "text": "Albers Equal-Area Conic\nConic (obviously) and preserves area while distoring shape"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#lambert-conformal-conic",
+    "href": "Lecture_2/lecture_2.html#lambert-conformal-conic",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Lambert Conformal Conic",
+    "text": "Lambert Conformal Conic\nConic but preserving shape (and angle)"
+  },
+  {
+    "objectID": "Lecture_2/lecture_2.html#lambert-azimuthal-equal-area",
+    "href": "Lecture_2/lecture_2.html#lambert-azimuthal-equal-area",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Lambert Azimuthal Equal-Area",
+    "text": "Lambert Azimuthal Equal-Area\nPlanar (preserves area while distorting shape)"
   },
   {
     "objectID": "Lecture_2/lecture_2.html#important-to-remember",
