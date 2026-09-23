@@ -249,14 +249,14 @@
     "href": "Lecture_2/lecture_2.html#albers-equal-area-conic",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Albers Equal-Area Conic",
-    "text": "Albers Equal-Area Conic\nConic (obviously) and preserves area while distoring shape"
+    "text": "Albers Equal-Area Conic\nConic (obviously)—preserves area while distorting shape"
   },
   {
     "objectID": "Lecture_2/lecture_2.html#lambert-conformal-conic",
     "href": "Lecture_2/lecture_2.html#lambert-conformal-conic",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Lambert Conformal Conic",
-    "text": "Lambert Conformal Conic\nConic but preserving shape (and angle)"
+    "text": "Lambert Conformal Conic\nConic but preserves shape (and angle)"
   },
   {
     "objectID": "Lecture_2/lecture_2.html#lambert-azimuthal-equal-area",
