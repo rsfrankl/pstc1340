@@ -280,6 +280,13 @@
     "text": "Why does this matter?\n\n\n\n\nWhen we add data to our GIS from different sources, we need the information to “line up” nicely – so we need to know the projection and it should be the same for all layers\nIf the type of analysis we’re going to be doing involves area measurement or distance, for example, we want to make sure we’re using an appropriate projection."
   },
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSTC 1340: Principles & Methods of GIS",
+    "section": "",
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "Lecture_1/lecture_1.html#todays-agenda",
     "href": "Lecture_1/lecture_1.html#todays-agenda",
     "title": "Principles & Methods of Geographic Information Systems",
@@ -420,10 +427,199 @@
     "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PSTC 1340: Principles & Methods of GIS",
+    "objectID": "Lecture_3/lecture_3.html#section",
+    "href": "Lecture_3/lecture_3.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
     "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "http://xkcd.com/977/"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#todays-agenda",
+    "href": "Lecture_3/lecture_3.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nLecture: Cartography\n\nTypes of data\nTypes of maps\nClassifying data\nExamples of maps\n\nGoals:\n\nComfort with basic cartographic principles\nAbility to match symbology to data type\nIntroduction to map elements"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#cartography",
+    "href": "Lecture_3/lecture_3.html#cartography",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Cartography",
+    "text": "Cartography\n\n\n\nThe drawing of maps or charts. — Oxford English Dictionary\n\n\nThe science or art of making maps. — Merriam-Webster Dictionary\n\n\nThe study and practice of making maps. — Wikipedia"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#this-cartographic-technique-has-a-name",
+    "href": "Lecture_3/lecture_3.html#this-cartographic-technique-has-a-name",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "This cartographic technique has a name:",
+    "text": "This cartographic technique has a name:\nChernoff faces\n\nSource: Eugene Turner, http://www.csun.edu/~hfgeg005/eturner/gallery/lifeinla.GIF"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#types-of-data",
+    "href": "Lecture_3/lecture_3.html#types-of-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of data",
+    "text": "Types of data\n\nNominal – Information that names or identifies objects\n\nCould be text or a number, but we wouldn’t do math with the number\nExamples: County names or census tract numbers\nRepresented on a map using labels\n\nCategorical – Information that is classified into groups, classes, or categories with no ranking involved\n\nAgain, the information could be text or a number, but we wouldn’t do math with the number\nExamples: urban/rural; residential/commercial/agricultural\nRepresented on a map using unique value maps\n\nOrdinal – Information is classified into groups, but there is an assumed ranking to the categories\n\nFor example: Opinion polls, income, or educational attainment\nRepresented on a map using either graduated color or unique value maps"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#type-of-data-continued",
+    "href": "Lecture_3/lecture_3.html#type-of-data-continued",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Type of Data, continued",
+    "text": "Type of Data, continued\n\nNumeric – Information stored as numbers, with a regularly spaced measurement scale\n\nOften continuous data, such as income or rainfall\nRatio data are numeric information with a meaningful zero value, such as no rainfall, income, or height\n\nDoing math with these types of data makes common sense\n\nInterval data re the same as ratio data, but do not have a meaningful zero point\n\nData with negative values must be interval"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#representing-different-kinds-of-information",
+    "href": "Lecture_3/lecture_3.html#representing-different-kinds-of-information",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Representing different kinds of information",
+    "text": "Representing different kinds of information\n\nThe way in which we display data on the map needs to match not only the type of data but also the type of feature\n\nNominal – labels\nCategorical – different symbol or color for each category\nOrdinal – we want to use color or symbol size to convey the increase in value that goes with each category\n\nGraduated or proportional symbol maps.\n\nNumerical – for points and lines, we use lines thickness or symbol size to express variations in value\n\nFor polygons we use graduated color or choropleth maps\nSingle color that changes in intensity to convey changes in value\nSometimes two colors are used"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#classification-schemes",
+    "href": "Lecture_3/lecture_3.html#classification-schemes",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Classification Schemes",
+    "text": "Classification Schemes\n\nMapping continuous data means we need a meaningful way to create categories – this is called classification\nSimilar to choices that are made in generating a histogram\nHow we allocate values to categories will affect our final map\n\nThis means number of categories\nBut also the classification scheme itself\n\nIdeally you are able to justify your choices (good general advice!)\n\nWhat is the takeaway message you want to convey?\nWho is your audience?"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#most-common-types-of-classification",
+    "href": "Lecture_3/lecture_3.html#most-common-types-of-classification",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Most common types of classification",
+    "text": "Most common types of classification\n\nNatural breaks (Jenks) – looks at the distribution of values and sets the break points at “natural breaks” in the data\nEqual interval – Creates a set number of classes of equal size\nFixed interval – Same as equal interval, except you decide the size of the interval and the number of classes depends on that decision (e.g., by 1,000s)\nQuantile (equal count) – puts the same number of features into each class\nStandard deviation – creates categories based on the number of standard deviations away from the mean\nManual – you choose the break points yourself"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#example-reported-crime-in-washington-dc",
+    "href": "Lecture_3/lecture_3.html#example-reported-crime-in-washington-dc",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Example – Reported crime in Washington, DC",
+    "text": "Example – Reported crime in Washington, DC"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#what-do-we-need-to-think-about",
+    "href": "Lecture_3/lecture_3.html#what-do-we-need-to-think-about",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What do we need to think about?",
+    "text": "What do we need to think about?\n\nMap elements – the pieces of a map that make it a finished (and polished product)\n\nIndividual elements should contribute to conveying information, not detract from it\nLimit clumping together of elements\nLimit use of multiple fonts and colors\n\nMap symbology – the way in which the information the map conveys is portrayed\n\nColors – hue, intensity, and saturation\nSymbols – size and type\n\nBy necessity, maps are selective of the information they show and information is generalized"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#choosing-symbols-and-colors",
+    "href": "Lecture_3/lecture_3.html#choosing-symbols-and-colors",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Choosing symbols and colors",
+    "text": "Choosing symbols and colors\n\nBeauty is in the eye of the beholder, but there are some general guidelines!\nWater and land should not be given unusual colors—e.g., water is blue not red\nIncreased thickness of lines or larger symbols should match increased value\nDarker or more intense colors usually go with higher values\nIf you use a color ramp with two colors, your data should also reflect two extremes in value—for example, in and out migration or voting patterns\nAvoid mixing and matching lots of different patterns on the same map—the eye can’t handle it"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-3",
+    "href": "Lecture_3/lecture_3.html#section-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#map-scale",
+    "href": "Lecture_3/lecture_3.html#map-scale",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Map Scale",
+    "text": "Map Scale\n\nOften referred to as the “representative fraction”\n\nRelationship of units on the ground to map units\nThe fraction or ratio of objects on the page to real life objects\n\nCommon USGS scale for topographical maps is 1:24,000\n1:100,000 means one centimeter on the map is equivalent to 100,000 centimeters (or 1 km) in the real world\nFitting a map of the world into two book pages requires a scale of about 1:100,000,000\nScale is unitless – we could be talking about 1 foot to 24,000 feet or 1 meter to 24,000 meters"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#what-makes-a-map",
+    "href": "Lecture_3/lecture_3.html#what-makes-a-map",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What makes a “map”?",
+    "text": "What makes a “map”?\n\nCartographic elements:\n\nTitle\nNeatline\nScale bar\nLegend\nNorth arrow\nInset map"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#so-many-ways-to-visualize-information-on-a-map",
+    "href": "Lecture_3/lecture_3.html#so-many-ways-to-visualize-information-on-a-map",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "So many ways to visualize information on a map!",
+    "text": "So many ways to visualize information on a map!\n\nThematic Maps – organize and display spatial variation of a single variable\nChoropleth maps – changes in a variable are classified and mapped by some administrative category (e.g. countries or states)\nDasymetric maps – Uses additional information to allocate value within polygons\nIsoline or contour maps – lines delineate areas of similar value. E.g., air pressure or elevation\nReference maps – may display lots of different types of information\n\nTopological maps or atlases\n\nDot maps, picture symbol maps, graduated symbol maps\nNetwork and flow maps – show direction and magnitude of flows\nCartograms—a unit’s display area is determined not by its actual area but by an attribute value"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-5",
+    "href": "Lecture_3/lecture_3.html#section-5",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: Census Atlas of the U.S."
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-6",
+    "href": "Lecture_3/lecture_3.html#section-6",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://www.nature.com/articles/s41597-022-01603-z"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-7",
+    "href": "Lecture_3/lecture_3.html#section-7",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://www.nationsonline.org/oneworld/map/USA/indiana_map.htm"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-8",
+    "href": "Lecture_3/lecture_3.html#section-8",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://content.tfl.gov.uk/standard-tube-map.pdf"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-9",
+    "href": "Lecture_3/lecture_3.html#section-9",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: http://demographics.coopercenter.org/DotMap/index.html"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-10",
+    "href": "Lecture_3/lecture_3.html#section-10",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: miracmaps.blogspot.com"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#flow-map-a-famous-one",
+    "href": "Lecture_3/lecture_3.html#flow-map-a-famous-one",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Flow map (a famous one!)",
+    "text": "Flow map (a famous one!)\n\nSource: https://en.wikipedia.org/wiki/Charles_Joseph_Minard"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#presidential-vote",
+    "href": "Lecture_3/lecture_3.html#presidential-vote",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "2016 Presidential Vote",
+    "text": "2016 Presidential Vote\n\nSource: http://www-personal.umich.edu/~mejn/election/2016/"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#presidential-vote-1",
+    "href": "Lecture_3/lecture_3.html#presidential-vote-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "2016 Presidential Vote",
+    "text": "2016 Presidential Vote\n\nSource: http://www-personal.umich.edu/~mejn/election/2016/"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-11",
+    "href": "Lecture_3/lecture_3.html#section-11",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: http://www.viewsoftheworld.net/wp-content/uploads/2020/11/USelection2020Cartogram.png"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#questions-we-can-ask-about-maps-and-spatial-data",
+    "href": "Lecture_3/lecture_3.html#questions-we-can-ask-about-maps-and-spatial-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Questions we can ask about maps and spatial data",
+    "text": "Questions we can ask about maps and spatial data\n\nWhat are the high and low values and where are they?\nDoes there appear to be a relationship between location and value?\nDo similar values appear to be located close together, or clustered? Is another spatial pattern discernible?\nAre there characteristics of areas that appear to correspond with particular sets of values? e.g. coastal or inner city.\nWould the pattern change if we change the scale of analysis? For example, what happens to the spatial pattern if we go from counties to states?"
+  },
+  {
+    "objectID": "Lecture_3/lecture_3.html#section-12",
+    "href": "Lecture_3/lecture_3.html#section-12",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "So, knowing what we now know, how can we turn this into a nice map composition?"
   }
 ]
