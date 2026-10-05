@@ -280,153 +280,6 @@
     "text": "Why does this matter?\n\n\n\n\nWhen we add data to our GIS from different sources, we need the information to “line up” nicely – so we need to know the projection and it should be the same for all layers\nIf the type of analysis we’re going to be doing involves area measurement or distance, for example, we want to make sure we’re using an appropriate projection."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "PSTC 1340: Principles & Methods of GIS",
-    "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#todays-agenda",
-    "href": "Lecture_1/lecture_1.html#todays-agenda",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Today’s agenda",
-    "text": "Today’s agenda\n\nIntroductions\nGeneral housekeeping\n\nGIS: a sales pitch\nGo over syllabus\nTalk about projects\n\nWhat you can expect to learn in this class (lots!)\nTest driving ArcGIS Pro"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#eviction-lab",
-    "href": "Lecture_1/lecture_1.html#eviction-lab",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Eviction Lab",
-    "text": "Eviction Lab\n\nSource: evictionlab.org"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#national-zoning-atlas",
-    "href": "Lecture_1/lecture_1.html#national-zoning-atlas",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "National Zoning Atlas",
-    "text": "National Zoning Atlas\n\nzoningatlas.org"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#inside-airbnb",
-    "href": "Lecture_1/lecture_1.html#inside-airbnb",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Inside Airbnb",
-    "text": "Inside Airbnb\n\ninsideairbnb.com"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#opportunity-atlas",
-    "href": "Lecture_1/lecture_1.html#opportunity-atlas",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Opportunity Atlas",
-    "text": "Opportunity Atlas\n\nopportunityatlas.org"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#solar-eclipse-waffle-house",
-    "href": "Lecture_1/lecture_1.html#solar-eclipse-waffle-house",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Solar eclipse & Waffle House",
-    "text": "Solar eclipse & Waffle House\n\nSource: Jerry Shannon on Twitter"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#a-lot",
-    "href": "Lecture_1/lecture_1.html#a-lot",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "A lot…",
-    "text": "A lot…\n\nHow to make a useful and aesthetically pleasing map (and how difficult it is to make a really good one)\nHow to analyze and interpret spatial data\n\nLike how to put all the local coffee shops on a map, calculate the best route to visit each of them, and estimate how many bus stops are nearby\nOr where in a city Airbnb prices are higher, and why\nOr where the last remaining crimes are being reported in Washington DC\n\nHow to work with ArcGIS Pro\nThe uses and abuses of spatial data\nWhat is meant by GIS or GIScience (History, theory, applications, etc.)"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#a-definition",
-    "href": "Lecture_1/lecture_1.html#a-definition",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "A definition",
-    "text": "A definition\n\nGISs are “automated systems for the capture, storage, retrieval, analysis, and display of spatial data.”\n— Clarke, 1995\n\n\n\nAnother way of thinking about it\n\n“GIS” is shorthand for a combination of spatial tools and applications, methods, concepts, and data that help us organize, visualize, and ask spatial questions"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#some-things-we-can-do-with-a-gis",
-    "href": "Lecture_1/lecture_1.html#some-things-we-can-do-with-a-gis",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Some things we can do with a GIS",
-    "text": "Some things we can do with a GIS\n\nData visualization – for example, exploratory analysis or cartography\nExplore geographic coincidence – for example, how many new firms in a region\nCalculate geometries – for example, length of road in an area, or the center of a polygon\nIdentify spatial patterns – for example, clusters or hot spots\nFind spatial relationships – for example, measuring exposure, accessibility, or market areas\nCalculate spatial variables – for example, distance or proximity\nEstimate values or density – for example, interpolation"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#but-gis-is-so-much-more",
-    "href": "Lecture_1/lecture_1.html#but-gis-is-so-much-more",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "But “GIS” is so much more",
-    "text": "But “GIS” is so much more\n\nSpatial analysis\nVisualization\nGeographic data science\nAI/machine learning\n\nOften these are all wrapped under the heading of “GIS”"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#our-goal-this-semester",
-    "href": "Lecture_1/lecture_1.html#our-goal-this-semester",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Our goal this semester",
-    "text": "Our goal this semester\n\n\nTo get comfortable with the “grammar” of spatial data and spatial data analysis and visualization:\n\nTerms that are used\nCommon data types\nBasics we need to know (like projections and coordinate systems)\nCommon spatial methods"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#how-were-going-to-get-there",
-    "href": "Lecture_1/lecture_1.html#how-were-going-to-get-there",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "How we’re going to get there",
-    "text": "How we’re going to get there\n\n\nLectures but also…\n\nReading\nHands-on lab activities\nSemester project"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#early-example-of-spatial-analysis-john-snows-1854-cholera-map",
-    "href": "Lecture_1/lecture_1.html#early-example-of-spatial-analysis-john-snows-1854-cholera-map",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Early example of spatial analysis: John Snow’s 1854 Cholera Map",
-    "text": "Early example of spatial analysis: John Snow’s 1854 Cholera Map"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#racialethnic-segregation",
-    "href": "Lecture_1/lecture_1.html#racialethnic-segregation",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Racial/Ethnic Segregation",
-    "text": "Racial/Ethnic Segregation\n\nSource: wired.com; demographics.coopercenter.org"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#sea-level-rise-in-providence",
-    "href": "Lecture_1/lecture_1.html#sea-level-rise-in-providence",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Sea Level Rise in Providence",
-    "text": "Sea Level Rise in Providence\n\nSource: provplan.org"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#mappiness",
-    "href": "Lecture_1/lecture_1.html#mappiness",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Mappiness",
-    "text": "Mappiness\n\nSource: mappiness.org.uk"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#mappiness-data-map",
-    "href": "Lecture_1/lecture_1.html#mappiness-data-map",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Mappiness data (map)",
-    "text": "Mappiness data (map)"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#mappiness-data-graph",
-    "href": "Lecture_1/lecture_1.html#mappiness-data-graph",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Mappiness data (graph)",
-    "text": "Mappiness data (graph)"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#other-examples",
-    "href": "Lecture_1/lecture_1.html#other-examples",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Other Examples",
-    "text": "Other Examples\n\nHabitat suitability\nHurricane vulnerability\nHeat wave vulnerability\nBus stop locations\nSmart growth policies"
-  },
-  {
-    "objectID": "Lecture_1/lecture_1.html#testing-out-our-work-environment",
-    "href": "Lecture_1/lecture_1.html#testing-out-our-work-environment",
-    "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Testing Out Our Work Environment",
-    "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
-  },
-  {
     "objectID": "Lecture_3/lecture_3.html#section",
     "href": "Lecture_3/lecture_3.html#section",
     "title": "Principles & Methods of Geographic Information Systems",
@@ -621,5 +474,453 @@
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "",
     "text": "So, knowing what we now know, how can we turn this into a nice map composition?"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#todays-agenda",
+    "href": "Lecture_1/lecture_1.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nIntroductions\nGeneral housekeeping\n\nGIS: a sales pitch\nGo over syllabus\nTalk about projects\n\nWhat you can expect to learn in this class (lots!)\nTest driving ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#eviction-lab",
+    "href": "Lecture_1/lecture_1.html#eviction-lab",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Eviction Lab",
+    "text": "Eviction Lab\n\nSource: evictionlab.org"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#national-zoning-atlas",
+    "href": "Lecture_1/lecture_1.html#national-zoning-atlas",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "National Zoning Atlas",
+    "text": "National Zoning Atlas\n\nzoningatlas.org"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#inside-airbnb",
+    "href": "Lecture_1/lecture_1.html#inside-airbnb",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Inside Airbnb",
+    "text": "Inside Airbnb\n\ninsideairbnb.com"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#opportunity-atlas",
+    "href": "Lecture_1/lecture_1.html#opportunity-atlas",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Opportunity Atlas",
+    "text": "Opportunity Atlas\n\nopportunityatlas.org"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#solar-eclipse-waffle-house",
+    "href": "Lecture_1/lecture_1.html#solar-eclipse-waffle-house",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Solar eclipse & Waffle House",
+    "text": "Solar eclipse & Waffle House\n\nSource: Jerry Shannon on Twitter"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#a-lot",
+    "href": "Lecture_1/lecture_1.html#a-lot",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "A lot…",
+    "text": "A lot…\n\nHow to make a useful and aesthetically pleasing map (and how difficult it is to make a really good one)\nHow to analyze and interpret spatial data\n\nLike how to put all the local coffee shops on a map, calculate the best route to visit each of them, and estimate how many bus stops are nearby\nOr where in a city Airbnb prices are higher, and why\nOr where the last remaining crimes are being reported in Washington DC\n\nHow to work with ArcGIS Pro\nThe uses and abuses of spatial data\nWhat is meant by GIS or GIScience (History, theory, applications, etc.)"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#a-definition",
+    "href": "Lecture_1/lecture_1.html#a-definition",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "A definition",
+    "text": "A definition\n\nGISs are “automated systems for the capture, storage, retrieval, analysis, and display of spatial data.”\n— Clarke, 1995\n\n\n\nAnother way of thinking about it\n\n“GIS” is shorthand for a combination of spatial tools and applications, methods, concepts, and data that help us organize, visualize, and ask spatial questions"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#some-things-we-can-do-with-a-gis",
+    "href": "Lecture_1/lecture_1.html#some-things-we-can-do-with-a-gis",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Some things we can do with a GIS",
+    "text": "Some things we can do with a GIS\n\nData visualization – for example, exploratory analysis or cartography\nExplore geographic coincidence – for example, how many new firms in a region\nCalculate geometries – for example, length of road in an area, or the center of a polygon\nIdentify spatial patterns – for example, clusters or hot spots\nFind spatial relationships – for example, measuring exposure, accessibility, or market areas\nCalculate spatial variables – for example, distance or proximity\nEstimate values or density – for example, interpolation"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#but-gis-is-so-much-more",
+    "href": "Lecture_1/lecture_1.html#but-gis-is-so-much-more",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "But “GIS” is so much more",
+    "text": "But “GIS” is so much more\n\nSpatial analysis\nVisualization\nGeographic data science\nAI/machine learning\n\nOften these are all wrapped under the heading of “GIS”"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#our-goal-this-semester",
+    "href": "Lecture_1/lecture_1.html#our-goal-this-semester",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Our goal this semester",
+    "text": "Our goal this semester\n\n\nTo get comfortable with the “grammar” of spatial data and spatial data analysis and visualization:\n\nTerms that are used\nCommon data types\nBasics we need to know (like projections and coordinate systems)\nCommon spatial methods"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#how-were-going-to-get-there",
+    "href": "Lecture_1/lecture_1.html#how-were-going-to-get-there",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How we’re going to get there",
+    "text": "How we’re going to get there\n\n\nLectures but also…\n\nReading\nHands-on lab activities\nSemester project"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#early-example-of-spatial-analysis-john-snows-1854-cholera-map",
+    "href": "Lecture_1/lecture_1.html#early-example-of-spatial-analysis-john-snows-1854-cholera-map",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Early example of spatial analysis: John Snow’s 1854 Cholera Map",
+    "text": "Early example of spatial analysis: John Snow’s 1854 Cholera Map"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#racialethnic-segregation",
+    "href": "Lecture_1/lecture_1.html#racialethnic-segregation",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Racial/Ethnic Segregation",
+    "text": "Racial/Ethnic Segregation\n\nSource: wired.com; demographics.coopercenter.org"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#sea-level-rise-in-providence",
+    "href": "Lecture_1/lecture_1.html#sea-level-rise-in-providence",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Sea Level Rise in Providence",
+    "text": "Sea Level Rise in Providence\n\nSource: provplan.org"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#mappiness",
+    "href": "Lecture_1/lecture_1.html#mappiness",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Mappiness",
+    "text": "Mappiness\n\nSource: mappiness.org.uk"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#mappiness-data-map",
+    "href": "Lecture_1/lecture_1.html#mappiness-data-map",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Mappiness data (map)",
+    "text": "Mappiness data (map)"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#mappiness-data-graph",
+    "href": "Lecture_1/lecture_1.html#mappiness-data-graph",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Mappiness data (graph)",
+    "text": "Mappiness data (graph)"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#other-examples",
+    "href": "Lecture_1/lecture_1.html#other-examples",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Other Examples",
+    "text": "Other Examples\n\nHabitat suitability\nHurricane vulnerability\nHeat wave vulnerability\nBus stop locations\nSmart growth policies"
+  },
+  {
+    "objectID": "Lecture_1/lecture_1.html#testing-out-our-work-environment",
+    "href": "Lecture_1/lecture_1.html#testing-out-our-work-environment",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Testing Out Our Work Environment",
+    "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "PSTC 1340: Principles & Methods of GIS",
+    "section": "",
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section",
+    "href": "Lecture_4/lecture_4.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://xkcd.com/1845/"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#todays-agenda",
+    "href": "Lecture_4/lecture_4.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nLecture:\n\nA few cartographic considerations\nData Management & Manipulation\n\nData models, Database Management Systems (DBMS), key DBMS functionality\n\nBasic ArcGIS Pro data management functionality\nCollecting our own data in the field\n\nDIY (Excel, paper and pen, etc)\nOnline forms\nOther options"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#more-cartographic-considerations",
+    "href": "Lecture_4/lecture_4.html#more-cartographic-considerations",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "More cartographic considerations",
+    "text": "More cartographic considerations\n\nWhat is the purpose of the map?\nWho is your audience?\nHow will your audience be viewing the map?\nThink about including additional map layers and information that will improve your map, both aesthetically and in terms of the information you’re trying to convey\nPay attention to projection!"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#basemaps-in-arcgis-pro",
+    "href": "Lecture_4/lecture_4.html#basemaps-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Basemaps in ArcGIS Pro",
+    "text": "Basemaps in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#data",
+    "href": "Lecture_4/lecture_4.html#data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Data",
+    "text": "Data\n\nData are pieces of information\nDatabases are forms of data organization that allow us to easily retrieve data\n\nHow the data are organized will determine what kinds of information we can retrieve about the data\nExample: the phone book\n\nData models – logical constructs for storage and retrieval of data"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#data-elements",
+    "href": "Lecture_4/lecture_4.html#data-elements",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Data elements",
+    "text": "Data elements\n\n\nFields or attributes or variables\nRecords or tuples or observations"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#data-tables-in-arcgis-pro",
+    "href": "Lecture_4/lecture_4.html#data-tables-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Data Tables in ArcGIS Pro",
+    "text": "Data Tables in ArcGIS Pro\n\n\n\nAttribute tables\n\nThese are the tables that accompany feature classes (points, lines, polygons)\nRight click on layer and open table\n\nStandalone tables\n\nTables that are not associated with a feature class\n\nFor example summary statistics\nOr a table of data for places"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#data-in-a-gis-environment",
+    "href": "Lecture_4/lecture_4.html#data-in-a-gis-environment",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Data in a GIS environment",
+    "text": "Data in a GIS environment\n\nSpatial data model – How the spatial element of the data is organized\n\nVector v. raster\nInformation about location and topology of our points, lines, and polygons\n\nAttribute data model – data that provide information about characteristics of the spatial features\n\nAttribute or standalone tables"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#database-management-systems-dbms",
+    "href": "Lecture_4/lecture_4.html#database-management-systems-dbms",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Database management systems (DBMS)",
+    "text": "Database management systems (DBMS)\n\nElements of a DBMS:\n\nData definition language – Allows user to set up or define new database, including numbers and types of attributes\nData dictionary – Catalog of attributes and their “legal” values and ranges\nData entry – Ways to enter new data and ensure they follow the rules laid out by the data dictionary\nVerification and updating – Deleting, modifying, or inserting records and creating reports\n\nInformation can be stored in binary or ASCII format"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#field-types",
+    "href": "Lecture_4/lecture_4.html#field-types",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Field types",
+    "text": "Field types\n\nDatabases like to have the same kind of information in a field\n\nE.g. numbers, strings, or dates\nBut also information on:\n\nLength – how many letters in a string field\nPrecision – how many numbers in a numerical field\nScale – the number of decimal places\n\nGenerally, once we define a field, its type cannot be changed"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-1",
+    "href": "Lecture_4/lecture_4.html#section-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "1"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#generating-new-fields-in-arcgis-pro",
+    "href": "Lecture_4/lecture_4.html#generating-new-fields-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Generating New Fields in ArcGIS Pro",
+    "text": "Generating New Fields in ArcGIS Pro\n\nYou’ve done this already!\nA major function of working in a GIS is the creation or generation of new information, or variables\n\nMuch of our work this semester will cover ways of generating spatial variables (e.g., distance or density)\nWe also create new variables based on existing variables, however\n\nFor example, percent population that is x = (total x population/total population)*100"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#generating-new-fields-in-arcmap",
+    "href": "Lecture_4/lecture_4.html#generating-new-fields-in-arcmap",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Generating New Fields in ArcMap",
+    "text": "Generating New Fields in ArcMap\n\n\n\n\n\nEasiest to think of creating new variables as a two-step process:\nCreating a new field (column)\n\nWhat name?\nWhat format?\n\nPopulating that field with values"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#basic-dbms-functions",
+    "href": "Lecture_4/lecture_4.html#basic-dbms-functions",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Basic DBMS Functions",
+    "text": "Basic DBMS Functions\n\n\n\n\n\nSorting\nReordering\nSubsetting\nSearching\nAnd we want to be able to apply these functions by attribute and by location\n\nFor example, high to low income or distance from some point, close to far"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#types-of-dbms",
+    "href": "Lecture_4/lecture_4.html#types-of-dbms",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of DBMS",
+    "text": "Types of DBMS\n\nFlat files – simple, but not efficient\nHierarchical – inflexible relationships\nRelational – multiple tables, but relationships between tables are defined as needed\n\nImportance of the “primary key”\n\nObject and Object-Relational – better for storing complete objects and and object behavior, but not as popular as relational databases"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#codds-five-database-rules",
+    "href": "Lecture_4/lecture_4.html#codds-five-database-rules",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Codd’s Five Database Rules",
+    "text": "Codd’s Five Database Rules\n\nOnly one value is stored at any intersection of row and column.\nAll values in a column deal with the same subject.\nEach row is unique.\nThere is no significance to the sequence of rows.\nThere is no significance to the sequence of columns."
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#querying-a-database",
+    "href": "Lecture_4/lecture_4.html#querying-a-database",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Querying a database",
+    "text": "Querying a database\n\nTypes of queries\n\nAttribute queries\nSpatial queries"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#attribute-queries",
+    "href": "Lecture_4/lecture_4.html#attribute-queries",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Attribute queries",
+    "text": "Attribute queries\n\nAttribute queries create a subset of records or features that meet the query criteria\nCan be simple, like “Find California”\n\nThis can be done by sorting, browsing, or searching\n\nOr selecting features that meet particular criteria (like minimum city size)\nOnce we’ve created our selection we can:\n\nGenerate summary statistics\nCreate new feature class or shapefile\nCreate new variables that label features as having a particular characteristic"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#attribute-queries-1",
+    "href": "Lecture_4/lecture_4.html#attribute-queries-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Attribute queries",
+    "text": "Attribute queries\n\nArcGIS uses Structured Query Language (SQL)\n\nCommon database query language\nBasically a logical expression that generates a selected set of records\n\nFor example, all cities larger than 50,000 inhabitants\nOr all “highly active” volcanoes\nWe can then “summarize” information based on our selected set of cities – e.g. median income for all cities greater than 50,000 inhabitants\n\nIn ArcGIS Pro we use Select by Attribute"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#attribute-queries-2",
+    "href": "Lecture_4/lecture_4.html#attribute-queries-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Attribute queries",
+    "text": "Attribute queries"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#spatial-queries",
+    "href": "Lecture_4/lecture_4.html#spatial-queries",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial queries",
+    "text": "Spatial queries\n\nSpatial queries also generate a subset of features, but not based on their attribute characteristics\n\nInstead, we’re interested in their spatial characteristics\nFor example, all housing units within 500 meters of a major interstate\nWe call this “selecting by location”\n\nCommon types of spatial queries:\n\nProximity – All children within a mile of a school\nContainment – All the schools in a particular county\nIntersection – All the US counties that touch the coastline\n\nCan also be features that overlap or cross features from another layer\n\n\nInteractive selection – Can be done via table or map\n\nYou use the mouse to select the features you want\n\nBuffers are often helpful\n\nFor example, rest stops and interstates"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#spatial-queries-1",
+    "href": "Lecture_4/lecture_4.html#spatial-queries-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial queries",
+    "text": "Spatial queries"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#whats-the-process",
+    "href": "Lecture_4/lecture_4.html#whats-the-process",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What’s the process?",
+    "text": "What’s the process?\n\nSearch open data portal (or similar)\nFind data of interest\n(Look at metadata!)\nDownload: often as a shapefile\nUnzip file if necessary\nOpen in ArcGIS Pro\nCheck projection (often web Mercator simple geographic coordinates)\nExport to a project geodatabase\n\nUse “Environment” tab to select the appropriate projection to export the data in"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#why-collect-our-own-data",
+    "href": "Lecture_4/lecture_4.html#why-collect-our-own-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Why collect our own data?",
+    "text": "Why collect our own data?\n\nWhen data on the topic we’re interested in is not available\nWhen the variables or characteristics of a place or thing don’t exist\nTo have a more engaged/subjective view on a topic\nTo collect data at a fine spatial resolution (e.g., a bench or a sculpture)"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#what-will-we-need-if-we-want-to-map-our-data",
+    "href": "Lecture_4/lecture_4.html#what-will-we-need-if-we-want-to-map-our-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What will we need if we want to map our data?",
+    "text": "What will we need if we want to map our data?\n\nLocation, location, location\nFor this week: latitude and longitude\n\nIn decimal format\nOne column for each\n\nGeographic coordinate system used to ascertain location"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#what-else-do-we-need-to-think-about",
+    "href": "Lecture_4/lecture_4.html#what-else-do-we-need-to-think-about",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What else do we need to think about?",
+    "text": "What else do we need to think about?\n\nWhat other variables will we need?\nMappable information:\n\nLabels\nQuantities\nValues\nCategories\n\nThink about the attribute tables we’ve already worked with…\n\nName / ID\nOther characteristics (e.g., size or age)\n\nCategorical data should have categories that are:\n\nExhaustive\nMutually exclusive"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#collecting-data-do-it-yourself-mode",
+    "href": "Lecture_4/lecture_4.html#collecting-data-do-it-yourself-mode",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Collecting Data: Do It Yourself Mode",
+    "text": "Collecting Data: Do It Yourself Mode\n\nReliable, evergreen option\n\nPen and paper\nExcel spreadsheet\nClipboard\n\nKey: you need a location variable\n\nThink about scale\nFor this week: latitude and longitude (but there are lots of other options)\n\nStraightforward option: use Google or Apple maps\n\nWGS84 (World Geodetic System 1984)"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-2",
+    "href": "Lecture_4/lecture_4.html#section-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Google Maps: right click on a pin for lat/long, then copy"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-3",
+    "href": "Lecture_4/lecture_4.html#section-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Apple Maps: click … and choose copy coordinates"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#alternative-compass-apps",
+    "href": "Lecture_4/lecture_4.html#alternative-compass-apps",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Alternative: Compass apps",
+    "text": "Alternative: Compass apps\n\n\n\n\n\n\n\nFor example, iPhone Compass app provides current latitude and longitude\nBUT:\n\nWhat is N? (latitude)\nWhat is W? (longitude)\nAnd how to deal with degrees, minutes, and seconds?"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#converting-latitude-and-longitude-into-decimal",
+    "href": "Lecture_4/lecture_4.html#converting-latitude-and-longitude-into-decimal",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Converting Latitude and Longitude into decimal",
+    "text": "Converting Latitude and Longitude into decimal\n\nGIS software will expect lat/long to be in decimal format, not degrees, minutes, seconds.\n\n42.375801, -71.113794 not 42°22’31” N, 71°6’48” W\n\nWhat to do?\n\nWeb converters\nFormula:\n\n\n\nSource: https://en.wikipedia.org/wiki/Decimal_degrees"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#another-option-online-forms",
+    "href": "Lecture_4/lecture_4.html#another-option-online-forms",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Another option: online forms",
+    "text": "Another option: online forms\n\nLots of apps exist to help make this process easier\nYou can use one called Jotform\n\nFree\nHas lots of options for types of data it can collect, including location\n\nCreate an account (I used my Brown gmail)\nCreate a form\nGo out in the field and collect responses with laptop or phone (recommended)"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#jotform",
+    "href": "Lecture_4/lecture_4.html#jotform",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Jotform",
+    "text": "Jotform"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#add-questions-to-your-new-form",
+    "href": "Lecture_4/lecture_4.html#add-questions-to-your-new-form",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Add questions to your new form",
+    "text": "Add questions to your new form"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#lots-of-options",
+    "href": "Lecture_4/lecture_4.html#lots-of-options",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Lots of options…",
+    "text": "Lots of options…"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-4",
+    "href": "Lecture_4/lecture_4.html#section-4",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "We only want Latitude and Longitude for this lab. For future knowledge, addresses are another option!"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#what-next",
+    "href": "Lecture_4/lecture_4.html#what-next",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What next?",
+    "text": "What next?\n\n\n\n\n\n\n\nYou can collect data using your laptop and the “view form” option\nOr download the Jotform app and then collect your data (recommended)\nDownload your data file under &lt;Tables&gt; in Excel format"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#how-this-all-works-in-practice",
+    "href": "Lecture_4/lecture_4.html#how-this-all-works-in-practice",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How this all works in practice",
+    "text": "How this all works in practice\n\nAt home: decide what you want to collect data about\n\nTopic\nBut also variables of interest\n\nOut in the “field”:\n\nVisit each location and collect the information you need on all the variables\nPLUS location (from Compass app, directly onto laptop, by saving locations in your map app, or with Jotform\n\nEverything goes into one spreadsheet, which we clean in Excel, save as csv and then add to an ArcGIS Pro project"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#example-data",
+    "href": "Lecture_4/lecture_4.html#example-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Example Data",
+    "text": "Example Data\n\n\nWhat do we need to fix before we import into ArcGIS Pro?\nOnce our data are “clean” we save as a csv file!"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-5",
+    "href": "Lecture_4/lecture_4.html#section-5",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "CSV table gets added to new ArcGIS Pro project"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-6",
+    "href": "Lecture_4/lecture_4.html#section-6",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Right click on table to get to Create Points From Table &gt; XY Table to Point"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#section-7",
+    "href": "Lecture_4/lecture_4.html#section-7",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Choose a name for new layer; check save location\nMake sure Lat and Long fields are correct"
+  },
+  {
+    "objectID": "Lecture_4/lecture_4.html#and-voilà-youve-created-spatial-data",
+    "href": "Lecture_4/lecture_4.html#and-voilà-youve-created-spatial-data",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "And voilà! You’ve created spatial data!",
+    "text": "And voilà! You’ve created spatial data!"
   }
 ]
