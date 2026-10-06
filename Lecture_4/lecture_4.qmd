@@ -17,8 +17,6 @@ format:
 
 ![[Source: https://xkcd.com/1845/](https://xkcd.com/1845/)](images/l5_image1.png){alt="xkcd cartoon"}
 
-
-
 ## Today's agenda
 
 - General housekeeping: Any Questions?
@@ -329,7 +327,7 @@ field_types |>
   - One column for each
 - Geographic coordinate system used to ascertain location
 
-## What else do we need to think about?
+## What else do we need to think about? {.smaller}
 
 - What other variables will we need?
 - Mappable information:
