@@ -15,9 +15,7 @@ format:
 
 ##
 
-![](images/image1.png){alt="xkcd comic"}
-
-[Source: https://xkcd.com/503/](https://xkcd.com/503/)
+![Source: https://xkcd.com/503/](images/image1.png){alt="xkcd comic"}
 
 ## Today's agenda
 
