@@ -1,0 +1,364 @@
+---
+title: "Principles & Methods of Geographic Information Systems"
+subtitle: "Lecture 6"
+author: "Rachel Franklin"
+date: "2026-10-20"
+date-format: long
+format:
+  revealjs:
+    theme: [default, gis_style.scss]
+    slide-number: true
+    incremental: false
+    footer: "Rachel Franklin | PSTC 1340 Fall 2026 | Lecture 6"
+    embed-resources: true
+---
+
+#
+
+![[Source: https://xkcd.com/2260/](https://xkcd.com/2260/)](images/image1.png){alt="xkcd comic"}
+
+# Today's agenda
+
+- General housekeeping: Any Questions?
+- Topic swap for today
+  - Next week (geocoding) remote
+- Lecture: Spatial Analysis 101
+  - Defining spatial analysis
+  - Core spatial analysis tools/methods
+  - Finding spatial analysis tools in ArcGIS Pro
+
+# What is "spatial analysis"?
+
+##
+
+![[Source: https://www.census.gov/library/visualizations/2020/geo/center-of-population-1790-2020.html](https://www.census.gov/library/visualizations/2020/geo/center-of-population-1790-2020.html)](images/image2.png){alt="Map of mean center of US population"}
+
+## Spatial analysis for social science applications
+
+- Often we use spatial analysis tools to extract information
+- Length of paved road in a region
+- Number of universities in a place
+- Number of inhabitants within a distance of a service
+- Area within a distance of a road or feature (like a bus stop or metro station)
+
+## Types of spatial analysis <br> (according to Longley)  {.smaller}
+
+- **Queries and reasoning** – no changes are made to the database and no new information is produced
+  - For example, how many cities within 300 miles of Providence?
+- **Measurements** --- Describing aspects of geographic data, like length, area, or shape
+  - For example, calculating the size (or area) of a parcel
+- **Transformations** --- Changing or combining data to create new data
+  - Using logical, mathematical, or geometrical rules
+- **Descriptive summaries** --- summary statistics for spatial data
+- **Optimization** --- Finding the best locations for a set of objects, given a set of criteria
+  - For example, best locations for public services
+- **Hypothesis testing** --- Making generalizations about a population from a sample
+  - Could this spatial pattern have occurred by chance?
+
+# We've covered queries and reasoning
+
+## Measurements {.smaller}
+
+- How far apart are two points?  How large is a parcel's area?
+- **Area**
+- **Distance** or **length**
+  - Distance may be measured two ways:
+    - Straight line or Pythagorean distance.  Also referred to as "as the crow flies"
+      - Assumes a flat plane, for latitude and longitude we need to think of great circle distances
+    - Manhattan or network distance
+- **Shape** --- for example Gerrymandering
+  - S=P/3.54√A
+    - Where P is perimeter and A is area; 3.54 is twice the square root of π
+    - S=1 for the most compact shape, a circle
+- **Slope** and **aspect**
+  - Digital Elevation Models or DEMs
+    - Rasters whose cells contain the elevation at that location
+
+## Transformations {.smaller}
+
+- **Buffers** --- Create an area of a specific and constant width around a point, line, or polygon
+  - This can be used to identify all objects falling within a certain distance of the original feature
+- **Point in polygon** --- Associates points with polygons
+  - Counts the number of points within a polygon or…Attaches polygon characteristics to points
+  - This is usually what people mean when they refer to a spatial join
+- **Polygon overlay** --- Determining whether two polygons overlap, the extent of their overlap, and what new polygons are created by the overlap
+  - Can be thought of as an intersection or a union of units and information
+- **Spatial interpolation** --- Estimating the value of a variable for locations where no measurement has occurred.
+  - For example, rainfall, temperature, or elevation
+  - e.g., Inverse distance weighting or Kriging
+- **Density estimation and potential** --- generates a surface from a set of discrete points
+
+# Where to find ArcGIS Pro spatial analysis tools
+
+## Geoprocessing with ArcGIS Pro
+
+- Geoprocessing tools are accessible via:
+  - Geoprocessing Toolbox
+  - Menus and tool bars
+  - Command line
+- ModelBuilder and scripts
+- Pay special attention to:
+  - Coordinate systems and projections
+  - Areas and lengths
+
+## Analysis tab…
+
+![](images/image3.png){alt="ArcGIS Pro screenshot"}
+
+## Geoprocessing Toolbox
+
+:::: {.columns}
+
+:::{.column width="50%"}
+
+- Found via the Toolbox icon
+- Search is your friend!
+- So is help
+
+:::
+
+:::{.column width="50%"}
+
+![](images/image4.png){alt="ArcGIS Pro screenshot" width="80%"}
+
+:::
+
+::::
+
+# The most common tools
+
+## Buffers
+
+Creates a new layer of polygons around a set of input features
+
+![](images/image6.png){alt="Visual of buffers"}
+
+## Buffers
+
+An appealing way to visualize and calculate areas surrounding features
+
+![](images/image7.png){alt="ArcGIS Pro screenshot"}
+
+## Buffers
+
+An appealing way to visualize and calculate areas surrounding features
+
+![](images/image8.png){alt="ArcGIS Pro screenshot"}
+
+## (Pairwise) Buffer interface in ArcGIS Pro
+
+![](images/image9.png){alt="ArcGIS Pro screenshot" fig-align="center"}
+
+# Why would we want buffers? <br> What purpose do they serve?
+
+## Calculating how many features fall into an area
+
+Point in polygon (aka spatial join)
+
+![](images/image10.png){alt="ArcGIS Pro screenshot"}
+
+## Calculating how many features fall into an area
+
+Point in polygon (aka spatial join)
+
+![](images/image11.png){alt="ArcGIS Pro screenshot"}
+
+## Intersect
+
+What if we want to know areas where two (or more) layers overlap?
+
+![](images/image12.png){alt="ArcGIS Pro screenshot"}
+
+## Intersect
+
+:::: {.columns}
+
+:::{.column width="50%"}
+
+\
+
+- Only keeps polygon areas that were common to both layers
+  - Makes it easier to identify locations where two conditions are in effect simultaneously
+    - E.g. habitat identification
+    - Or overlaps between census geographies (with pop data) and buffers
+
+:::
+
+::: {.column width="50%"}
+
+\
+
+![](images/image13.png){alt="ArcGIS Pro screenshot"}
+
+:::
+
+::::
+
+## (Pairwise) Intersect interface in ArcGIS Pro
+
+![](images/image14.png){alt="ArcGIS Pro screenshot" fig-align="center"}
+
+## What if we want to know how many people fall into an area?
+
+Buffers + Intersect (with census area data) for an approximation
+
+![](images/image15.png){alt="ArcGIS Pro screenshot"}
+
+## How is this useful?
+
+Suppose you're researching determinants of AirBnb rental prices and you want to locate all AirBnbs close to water and cultural locations?
+
+![](images/image16.png){alt="ArcGIS Pro screenshot"}
+
+## How is this useful?
+
+Suppose you're researching determinants of AirBnb rental prices and you want to locate all AirBnbs close to water and cultural locations?
+
+![](images/image17.png){alt="ArcGIS Pro screenshot"}
+
+## Dissolve
+
+Grouping features together, based on a common attribute
+
+![](images/image19.png){alt="Explanation of how dissolve tool works"}
+
+## Grouping features together, based on a common attribute
+
+Dissolve example 1
+
+![](images/image20.png){alt="ArcGIS Pro screenshot"}
+
+## Grouping features together, based on a common attribute
+
+Dissolve example 2
+
+![](images/image21.png){alt="ArcGIS Pro screenshot"}
+
+## (Pairwise) Dissolve interface in ArcGIS Pro
+
+![](images/image22.png){alt="ArcGIS Pro screenshot" fig-align="center"}
+
+## Thiessen (or Voronoi) polygons
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+- Creating polygons from points
+- What about the case where we might want to go from point features to polygons?
+- For example, suppose we want to define "catchment areas" for metro station?
+- The assumption being that each person will use the station closest to them
+- How is this different from buffers?
+
+:::
+
+::: {.column width="60%"}
+
+![](images/image23.png){alt="ArcGIS Pro screenshot"}
+
+:::
+
+::::
+
+## Thiessen (or Voronoi) polygons
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+\
+
+- Allocating areas to their closest points
+- Creates new polygon layer as output
+- Default extent of polygons is the bounded rectangle containing the points
+
+:::
+
+::: {.column width="60%"}
+
+![](images/image24.png){alt="ArcGIS Pro screenshot"}
+
+:::
+
+::::
+
+## Thiessen polygon interface in ArcGIS Pro
+
+![](images/image25.png){alt="ArcGIS Pro screenshot" fig-align="center"}
+
+## Clip
+
+::::{.columns}
+
+:::{.column width="40%"}
+
+\
+
+- How to change boundaries of a layer to match another
+- Clips—or cuts—one layer, using boundaries of a second layer
+- Does not change the attribute table!
+- So here, we can clip Voronoi polygons using the urban area polygon layer
+
+:::
+
+::: {.column width="60%"}
+
+![](images/image26.png){alt="ArcGIS Pro screenshot"}
+
+:::
+
+::::
+
+## Another Clip example
+
+![](images/image27.png){alt="Screenshot of ArcGIS Pro"}
+
+## (Pairwise) Clip interface in ArcGIS Pro
+
+![](images/image30.png){alt="ArcGIS Pro screenshot" fig-align="center"}
+
+# Other common tools
+
+## Near
+
+Calculating straight-line distances between features
+
+![](images/image31.png){alt="Example of how near tool works"}
+
+Produces a new column in the attribute table with distance <br> **(in units of the projection)**
+
+## Combining features from two or more layers
+
+- Append and Merge ---
+  - Layers must be the same feature type
+  - And have the same coordinate system
+
+![](images/image32.png){alt="Screenshot of ArcGIS Pro"}
+
+## Converting polygons to points
+
+- Calculating geometric centroids
+- Summarizing an area (polygon) with a point
+- Why would we need to be able to do this?
+- Not to be confused with population-weighted centroids!
+
+## Centroids
+
+![](images/image35.png){alt="Screenshot of ArcGIS Pro" fig-align="center"}
+
+## Summary
+
+- So many more tools—this is just scratching the surface
+- Most of these tools generate a new layer
+  - Pay attention to naming AND to where you're saving!
+- If you mess up, you can simply run the tool again
+- Using Help and the internet is key
+- It's common to need to string together tools to get to a final answer
+- Layer names can matter:
+  - No spaces or strange symbols.
+  - Use _
+  - No starting a layer name with a number (e.g., Pop_2011, not 2011_pop)
+
+## Using Help
+
+![](images/image37.png){alt="Screenshot of ArcGIS Pro" fig-align="center"}

@@ -585,7 +585,7 @@
     "href": "index.html",
     "title": "PSTC 1340: Principles & Methods of GIS",
     "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 6\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 7\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Lecture_1/lecture_1.html#todays-agenda",
@@ -726,6 +726,433 @@
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Testing Out Our Work Environment",
     "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#section",
+    "href": "Lecture_7/lecture_7.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://xkcd.com/2256/"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#todays-agenda",
+    "href": "Lecture_7/lecture_7.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nProject Lit Reviews due next week!\nLecture:\n\nWhere Spatial Data Come From (Part 3): Geocoding\n\nGeocoding practice\nIn three weeks: Exam!"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-its-this-1",
+    "href": "Lecture_7/lecture_7.html#geocoding-its-this-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding — It’s this",
+    "text": "Geocoding — It’s this"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-its-this-2",
+    "href": "Lecture_7/lecture_7.html#geocoding-its-this-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding — It’s this",
+    "text": "Geocoding — It’s this\n\nAlong with mapping, geocoding is one of the most commonly-used GIS applications\nWhen we geocode, we attach location information to tabular geographic information\n\nLocations of all grocery stores in Providence\nLocations of all REI stores in the U.S.\nLocations of all capital cities in the world\n\nWe can think of a location-specificity continuum from general (e.g., cities) to specific (e.g., exact addresses)"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#section-1",
+    "href": "Lecture_7/lecture_7.html#section-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "The more specific we are in terms of location, the more geographic information we need\n\nAlso, depending on use of geocoded information, exact location may be very important – for example, 911 emergency calls\nLocating cities requires a reference file with city locations\nLocating addresses in Providence requires street name and street number, at a minimum\n\nLocations can be attached to polygons or points, but the most challenging is attaching to addresses, or lines"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#whats-it-used-for",
+    "href": "Lecture_7/lecture_7.html#whats-it-used-for",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What’s it used for?",
+    "text": "What’s it used for?\n\nEmergency services\nGPS\nDriving directions\nGoogle maps\nCrime analysis\nMarketing"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#how-does-it-work",
+    "href": "Lecture_7/lecture_7.html#how-does-it-work",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How does it work?",
+    "text": "How does it work?\n\nTabular data are compared to a spatial Reference layer\n\nThis is what ArcGIS Pro uses to match addresses\n\nThis happens in a few steps\n\nTo work best, addresses need to be recognizable to the computer, or standardized\nThen standardized addresses in our table of locations (say, Urban Outfitters stores) are compared to our reference layer\n\nTo understand this, think about the standard components of a street address\n\nPrefix direction\nStreet name\nStreet type\nNumber\nSuffix direction"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#spatial-reference-layer",
+    "href": "Lecture_7/lecture_7.html#spatial-reference-layer",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial Reference Layer",
+    "text": "Spatial Reference Layer\n\n\n\nThe spatial reference layer includes the spatial information that will help locate our list of places in space\n\nThe street name, obviously, if we’re geocoding addresses\nOr city and state\n\nNames of streets are attached to line segments, or polylines\n\nEach line segment is associated with a range of street numbers\nThese are tabulated as “from address” to “to address” – allowing us to increase house numbers from bottom of line segment to top, since we know beginning and end number\n\nWhat we don’t know is where, exactly, a building lies on that line segment\nSo geo-coding always has an element of approximation to it"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#address-geocoding",
+    "href": "Lecture_7/lecture_7.html#address-geocoding",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Address Geocoding",
+    "text": "Address Geocoding\n\nOne range method: A single address range for each chunk of street\nTwo range method: An address range for each side of the street\n\nObviously more desirable, but not always possible since this information needs to be coded into the reference layer\n\nIn both cases, addresses are assigned to a place on the line in proportion to the starting and ending address on the line itself.\n\nSo if the polyline starts at 100 Main St. and ends at 200 Main St., an address of 150 Main St. goes right in the middle"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#types-of-geocoding-styles",
+    "href": "Lecture_7/lecture_7.html#types-of-geocoding-styles",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of geocoding styles",
+    "text": "Types of geocoding styles\n\nSingle field — Zip code, state name, power stations\nAlphanumeric Ranges — Helps narrow the search range for address identification, since ArcMap only has to look in that quadrant\nUS Cities and states — Locates cities, given city and state names\nUS One Address – Matches addresses to points or polygons\nUS One Range — Matches addresses to one range of street values\nUS Streets — Matches addresses to a range of street values for both sides of the street\nWorld City and country – Locates cities within countries on a world map\nZip code — Matches zip codes to a point or polygon reference layer\nZone option — Additional pieces of information (zip, state, city) that allow us to match over larger areas"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#why-its-important-to-know-your-study-location",
+    "href": "Lecture_7/lecture_7.html#why-its-important-to-know-your-study-location",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Why it’s important to know your study location",
+    "text": "Why it’s important to know your study location\n\nQuirky address styles:\n\nQueens, NY\nWashington, DC\nPhoenix, AZ\n\nQuickly growing locations\nSpelling quirks\n\nSaint and St. / Sainte and Ste.\n\nValue of alias tables\n\nMaxcy Hall v. 108 George Street"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#section-2",
+    "href": "Lecture_7/lecture_7.html#section-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: Apple Maps"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode",
+    "href": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Data Ready to Geocode",
+    "text": "Getting Data Ready to Geocode\nDo we see problems here?"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode-1",
+    "href": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Data Ready to Geocode",
+    "text": "Getting Data Ready to Geocode"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode-2",
+    "href": "Lecture_7/lecture_7.html#getting-data-ready-to-geocode-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Data Ready to Geocode",
+    "text": "Getting Data Ready to Geocode"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#how-geocoding-works-in-arcgis-pro",
+    "href": "Lecture_7/lecture_7.html#how-geocoding-works-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How geocoding works in ArcGIS Pro",
+    "text": "How geocoding works in ArcGIS Pro\n\nFirst, load your address table csv into ArcGIS Pro\nThen right click and choose “Geocode Table”\n\nPrompts will ask you to choose a locator—be sure you’re logged to ArcGIS Pro via Brown since geocoding costs “credits”\nLocator will prompt you for the pieces of information we need in order to geocode\n\nWhat are the key fields we’ll use to locate addresses?\n\n\nThe output is a new shapefile or feature class"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-overview",
+    "href": "Lecture_7/lecture_7.html#geocoding-overview",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding overview",
+    "text": "Geocoding overview"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-overview-1",
+    "href": "Lecture_7/lecture_7.html#geocoding-overview-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding overview",
+    "text": "Geocoding overview"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-overview-2",
+    "href": "Lecture_7/lecture_7.html#geocoding-overview-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding overview",
+    "text": "Geocoding overview"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-overview-3",
+    "href": "Lecture_7/lecture_7.html#geocoding-overview-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding overview",
+    "text": "Geocoding overview\n\n\n\n\n\n\n\n\nLast step!\nClick to estimate credits\nThis is a step you ideally do only once!"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-results",
+    "href": "Lecture_7/lecture_7.html#geocoding-results",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding results",
+    "text": "Geocoding results"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-results-1",
+    "href": "Lecture_7/lecture_7.html#geocoding-results-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding results",
+    "text": "Geocoding results\n\n\n\n\n\n\n\n\nImportant to spot check matched, unmatched, and tied!"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-results-2",
+    "href": "Lecture_7/lecture_7.html#geocoding-results-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding results",
+    "text": "Geocoding results\n\n\n\n\nImportant to spot check matched, unmatched, and tied!"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#summary-geocoding-in-arcgis-pro",
+    "href": "Lecture_7/lecture_7.html#summary-geocoding-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Summary: Geocoding in ArcGIS Pro",
+    "text": "Summary: Geocoding in ArcGIS Pro\n\nClean address data in MS Excel if necessary (be sure to close table when done, before adding to ArcGIS Pro)\nSave as csv\nAdd csv standalone table containing addresses of interest.\nSelect locator (exact method will depend on ArcGIS Pro license and other factors)\nGeocode, including selecting preferences\nCheck non-matching addresses if necessary"
+  },
+  {
+    "objectID": "Lecture_7/lecture_7.html#geocoding-practice",
+    "href": "Lecture_7/lecture_7.html#geocoding-practice",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geocoding Practice",
+    "text": "Geocoding Practice\n\nExtra data posted on Canvas\n\nTry cleaning Excel data if you’d like the practice; otherwise use “cleaned” spreadsheet\nGeocode!\nIf you have time, try dealing with the tied addresses (google sometimes helps)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#section-1",
+    "href": "Lecture_6/lecture_6.html#section-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://www.census.gov/library/visualizations/2020/geo/center-of-population-1790-2020.html"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#spatial-analysis-for-social-science-applications",
+    "href": "Lecture_6/lecture_6.html#spatial-analysis-for-social-science-applications",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spatial analysis for social science applications",
+    "text": "Spatial analysis for social science applications\n\nOften we use spatial analysis tools to extract information\nLength of paved road in a region\nNumber of universities in a place\nNumber of inhabitants within a distance of a service\nArea within a distance of a road or feature (like a bus stop or metro station)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#types-of-spatial-analysis-according-to-longley",
+    "href": "Lecture_6/lecture_6.html#types-of-spatial-analysis-according-to-longley",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of spatial analysis  (according to Longley)",
+    "text": "Types of spatial analysis  (according to Longley)\n\nQueries and reasoning – no changes are made to the database and no new information is produced\n\nFor example, how many cities within 300 miles of Providence?\n\nMeasurements — Describing aspects of geographic data, like length, area, or shape\n\nFor example, calculating the size (or area) of a parcel\n\nTransformations — Changing or combining data to create new data\n\nUsing logical, mathematical, or geometrical rules\n\nDescriptive summaries — summary statistics for spatial data\nOptimization — Finding the best locations for a set of objects, given a set of criteria\n\nFor example, best locations for public services\n\nHypothesis testing — Making generalizations about a population from a sample\n\nCould this spatial pattern have occurred by chance?"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#measurements",
+    "href": "Lecture_6/lecture_6.html#measurements",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Measurements",
+    "text": "Measurements\n\nHow far apart are two points? How large is a parcel’s area?\nArea\nDistance or length\n\nDistance may be measured two ways:\n\nStraight line or Pythagorean distance. Also referred to as “as the crow flies”\n\nAssumes a flat plane, for latitude and longitude we need to think of great circle distances\n\nManhattan or network distance\n\n\nShape — for example Gerrymandering\n\nS=P/3.54√A\n\nWhere P is perimeter and A is area; 3.54 is twice the square root of π\nS=1 for the most compact shape, a circle\n\n\nSlope and aspect\n\nDigital Elevation Models or DEMs\n\nRasters whose cells contain the elevation at that location"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#transformations",
+    "href": "Lecture_6/lecture_6.html#transformations",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Transformations",
+    "text": "Transformations\n\nBuffers — Create an area of a specific and constant width around a point, line, or polygon\n\nThis can be used to identify all objects falling within a certain distance of the original feature\n\nPoint in polygon — Associates points with polygons\n\nCounts the number of points within a polygon or…Attaches polygon characteristics to points\nThis is usually what people mean when they refer to a spatial join\n\nPolygon overlay — Determining whether two polygons overlap, the extent of their overlap, and what new polygons are created by the overlap\n\nCan be thought of as an intersection or a union of units and information\n\nSpatial interpolation — Estimating the value of a variable for locations where no measurement has occurred.\n\nFor example, rainfall, temperature, or elevation\ne.g., Inverse distance weighting or Kriging\n\nDensity estimation and potential — generates a surface from a set of discrete points"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#geoprocessing-with-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#geoprocessing-with-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geoprocessing with ArcGIS Pro",
+    "text": "Geoprocessing with ArcGIS Pro\n\nGeoprocessing tools are accessible via:\n\nGeoprocessing Toolbox\nMenus and tool bars\nCommand line\n\nModelBuilder and scripts\nPay special attention to:\n\nCoordinate systems and projections\nAreas and lengths"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#analysis-tab",
+    "href": "Lecture_6/lecture_6.html#analysis-tab",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Analysis tab…",
+    "text": "Analysis tab…"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#geoprocessing-toolbox",
+    "href": "Lecture_6/lecture_6.html#geoprocessing-toolbox",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Geoprocessing Toolbox",
+    "text": "Geoprocessing Toolbox\n\n\n\nFound via the Toolbox icon\nSearch is your friend!\nSo is help"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#buffers",
+    "href": "Lecture_6/lecture_6.html#buffers",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Buffers",
+    "text": "Buffers\nCreates a new layer of polygons around a set of input features"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#buffers-1",
+    "href": "Lecture_6/lecture_6.html#buffers-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Buffers",
+    "text": "Buffers\nAn appealing way to visualize and calculate areas surrounding features"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#buffers-2",
+    "href": "Lecture_6/lecture_6.html#buffers-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Buffers",
+    "text": "Buffers\nAn appealing way to visualize and calculate areas surrounding features"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#pairwise-buffer-interface-in-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#pairwise-buffer-interface-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "(Pairwise) Buffer interface in ArcGIS Pro",
+    "text": "(Pairwise) Buffer interface in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#calculating-how-many-features-fall-into-an-area",
+    "href": "Lecture_6/lecture_6.html#calculating-how-many-features-fall-into-an-area",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Calculating how many features fall into an area",
+    "text": "Calculating how many features fall into an area\nPoint in polygon (aka spatial join)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#calculating-how-many-features-fall-into-an-area-1",
+    "href": "Lecture_6/lecture_6.html#calculating-how-many-features-fall-into-an-area-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Calculating how many features fall into an area",
+    "text": "Calculating how many features fall into an area\nPoint in polygon (aka spatial join)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#intersect",
+    "href": "Lecture_6/lecture_6.html#intersect",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Intersect",
+    "text": "Intersect\nWhat if we want to know areas where two (or more) layers overlap?"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#intersect-1",
+    "href": "Lecture_6/lecture_6.html#intersect-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Intersect",
+    "text": "Intersect\n\n\n\n\n\nOnly keeps polygon areas that were common to both layers\n\nMakes it easier to identify locations where two conditions are in effect simultaneously\n\nE.g. habitat identification\nOr overlaps between census geographies (with pop data) and buffers"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#pairwise-intersect-interface-in-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#pairwise-intersect-interface-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "(Pairwise) Intersect interface in ArcGIS Pro",
+    "text": "(Pairwise) Intersect interface in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#what-if-we-want-to-know-how-many-people-fall-into-an-area",
+    "href": "Lecture_6/lecture_6.html#what-if-we-want-to-know-how-many-people-fall-into-an-area",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What if we want to know how many people fall into an area?",
+    "text": "What if we want to know how many people fall into an area?\nBuffers + Intersect (with census area data) for an approximation"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#how-is-this-useful",
+    "href": "Lecture_6/lecture_6.html#how-is-this-useful",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How is this useful?",
+    "text": "How is this useful?\nSuppose you’re researching determinants of AirBnb rental prices and you want to locate all AirBnbs close to water and cultural locations?"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#how-is-this-useful-1",
+    "href": "Lecture_6/lecture_6.html#how-is-this-useful-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How is this useful?",
+    "text": "How is this useful?\nSuppose you’re researching determinants of AirBnb rental prices and you want to locate all AirBnbs close to water and cultural locations?"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#dissolve",
+    "href": "Lecture_6/lecture_6.html#dissolve",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Dissolve",
+    "text": "Dissolve\nGrouping features together, based on a common attribute"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#grouping-features-together-based-on-a-common-attribute",
+    "href": "Lecture_6/lecture_6.html#grouping-features-together-based-on-a-common-attribute",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Grouping features together, based on a common attribute",
+    "text": "Grouping features together, based on a common attribute\nDissolve example 1"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#grouping-features-together-based-on-a-common-attribute-1",
+    "href": "Lecture_6/lecture_6.html#grouping-features-together-based-on-a-common-attribute-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Grouping features together, based on a common attribute",
+    "text": "Grouping features together, based on a common attribute\nDissolve example 2"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#pairwise-dissolve-interface-in-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#pairwise-dissolve-interface-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "(Pairwise) Dissolve interface in ArcGIS Pro",
+    "text": "(Pairwise) Dissolve interface in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#thiessen-or-voronoi-polygons",
+    "href": "Lecture_6/lecture_6.html#thiessen-or-voronoi-polygons",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\n\n\n\nCreating polygons from points\nWhat about the case where we might want to go from point features to polygons?\nFor example, suppose we want to define “catchment areas” for metro station?\nThe assumption being that each person will use the station closest to them\nHow is this different from buffers?"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#thiessen-or-voronoi-polygons-1",
+    "href": "Lecture_6/lecture_6.html#thiessen-or-voronoi-polygons-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Thiessen (or Voronoi) polygons",
+    "text": "Thiessen (or Voronoi) polygons\n\n\n\n\n\nAllocating areas to their closest points\nCreates new polygon layer as output\nDefault extent of polygons is the bounded rectangle containing the points"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#thiessen-polygon-interface-in-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#thiessen-polygon-interface-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Thiessen polygon interface in ArcGIS Pro",
+    "text": "Thiessen polygon interface in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#clip",
+    "href": "Lecture_6/lecture_6.html#clip",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Clip",
+    "text": "Clip\n\n\n\n\n\nHow to change boundaries of a layer to match another\nClips—or cuts—one layer, using boundaries of a second layer\nDoes not change the attribute table!\nSo here, we can clip Voronoi polygons using the urban area polygon layer"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#another-clip-example",
+    "href": "Lecture_6/lecture_6.html#another-clip-example",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Another Clip example",
+    "text": "Another Clip example"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#pairwise-clip-interface-in-arcgis-pro",
+    "href": "Lecture_6/lecture_6.html#pairwise-clip-interface-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "(Pairwise) Clip interface in ArcGIS Pro",
+    "text": "(Pairwise) Clip interface in ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#near",
+    "href": "Lecture_6/lecture_6.html#near",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Near",
+    "text": "Near\nCalculating straight-line distances between features\n\nProduces a new column in the attribute table with distance  (in units of the projection)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#combining-features-from-two-or-more-layers",
+    "href": "Lecture_6/lecture_6.html#combining-features-from-two-or-more-layers",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Combining features from two or more layers",
+    "text": "Combining features from two or more layers\n\nAppend and Merge —\n\nLayers must be the same feature type\nAnd have the same coordinate system"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#converting-polygons-to-points",
+    "href": "Lecture_6/lecture_6.html#converting-polygons-to-points",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Converting polygons to points",
+    "text": "Converting polygons to points\n\nCalculating geometric centroids\nSummarizing an area (polygon) with a point\nWhy would we need to be able to do this?\nNot to be confused with population-weighted centroids!"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#centroids",
+    "href": "Lecture_6/lecture_6.html#centroids",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Centroids",
+    "text": "Centroids"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#summary",
+    "href": "Lecture_6/lecture_6.html#summary",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Summary",
+    "text": "Summary\n\nSo many more tools—this is just scratching the surface\nMost of these tools generate a new layer\n\nPay attention to naming AND to where you’re saving!\n\nIf you mess up, you can simply run the tool again\nUsing Help and the internet is key\nIt’s common to need to string together tools to get to a final answer\nLayer names can matter:\n\nNo spaces or strange symbols.\nUse _\nNo starting a layer name with a number (e.g., Pop_2011, not 2011_pop)"
+  },
+  {
+    "objectID": "Lecture_6/lecture_6.html#using-help",
+    "href": "Lecture_6/lecture_6.html#using-help",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Using Help",
+    "text": "Using Help"
   },
   {
     "objectID": "Lecture_3/lecture_3.html#section",
