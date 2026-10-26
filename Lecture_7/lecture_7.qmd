@@ -238,7 +238,11 @@ Important to spot check matched, unmatched, and tied!
 
 ::: {.column width="30%"}
 
-Important to spot check matched, unmatched, and tied!
+\
+\
+\
+
+Ta da!
 
 :::
 
