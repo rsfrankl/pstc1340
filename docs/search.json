@@ -585,7 +585,7 @@
     "href": "index.html",
     "title": "PSTC 1340: Principles & Methods of GIS",
     "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 6\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 7\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 6\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 7\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 8\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Lecture_1/lecture_1.html#todays-agenda",
@@ -901,6 +901,181 @@
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Geocoding Practice",
     "text": "Geocoding Practice\n\nExtra data posted on Canvas\n\nTry cleaning Excel data if you’d like the practice; otherwise use “cleaned” spreadsheet\nGeocode!\nIf you have time, try dealing with the tied addresses (google sometimes helps)"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#section",
+    "href": "Lecture_8/lecture_8.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://xkcd.com/1138/"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#todays-agenda",
+    "href": "Lecture_8/lecture_8.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nProject Lit Review comments\nLecture:\n\nA raster reminder\nInterpolation, kernel density, and hex maps\n\nExam: Next week!!!\n\nIn two parts: theoretical/essay + practical"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#raster-reminder",
+    "href": "Lecture_8/lecture_8.html#raster-reminder",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Reminder",
+    "text": "Raster Reminder\n\nWhat are they?"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#raster-reminder-1",
+    "href": "Lecture_8/lecture_8.html#raster-reminder-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Raster Reminder",
+    "text": "Raster Reminder\n\nWhat are they?\nRasters are the “other spatial data model,” along with vector (points, lines, and polygons)\n\nRasters are particularly useful for continuous data – surfaces like elevation or precipitation\n\nRasters have coordinate systems and projections, just like the vector data model"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#important-info-about-rasters",
+    "href": "Lecture_8/lecture_8.html#important-info-about-rasters",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Important info about rasters",
+    "text": "Important info about rasters\n\nThey’re typically complex data structures that span multiple folders\nDo not attempt to copy, move, rename, or delete grids outside of Catalog.\nNames must be 13 characters or less\nDo not use spaces or non-alphanumeric characters to name grids\nNo spaces in folders or grids\n\n(underscore is OK)"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#interpolation-and-density-estimation-1",
+    "href": "Lecture_8/lecture_8.html#interpolation-and-density-estimation-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Interpolation and Density Estimation",
+    "text": "Interpolation and Density Estimation\n\nTwo different techniques that start and end in similar places\n\nThe input is a set of points\nOutput is a raster\n\nOne commonality: these techniques are easy to apply incorrectly!"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#interpolation-1",
+    "href": "Lecture_8/lecture_8.html#interpolation-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Interpolation",
+    "text": "Interpolation\n\nEstimating, or “guessing,” values for locations for which we do not have data\n\nFor example, elevation based on a set of sample points; we cannot reasonably sample every single location in the study area\nIn a GIS setting, this generally entails going from a set of points to a raster\nA variety of estimation techniques exists, but underlying them all is the concept of spatial dependence\n\nRemember: locations closer to each other are more likely to be related; as distance increases, this relationship becomes more tenuous"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#interpolation-2",
+    "href": "Lecture_8/lecture_8.html#interpolation-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Interpolation",
+    "text": "Interpolation\n\n\n\nWe can impose a grid on our study area and then assign values to each cell, given our input point data information\nIn the case of snowfall (right), we know snow fell in places we don’t have measurements, and that amounts will vary across space\nIf we had to guess, we would want to be able to borrow information from the locations where we did sample\n\n\n\n\n\nFebruary, 2016, total snowfall"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#interpolation-methods",
+    "href": "Lecture_8/lecture_8.html#interpolation-methods",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Interpolation methods",
+    "text": "Interpolation methods\n\nCommon methods include:\n\nInverse Distance Weighted (IDW)\nKriging\nSpline\n\nAll are implemented in ArcGIS Pro, via Tools\nKey is to understand both the technique you’re using and the data you’re working with"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#inverse-distance-weighting",
+    "href": "Lecture_8/lecture_8.html#inverse-distance-weighting",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Inverse Distance Weighting",
+    "text": "Inverse Distance Weighting\n\n\n\nUses values of neighboring points to estimate values for a grid cell\nPoints located further away carry less weight than points close by (hence inverse distance weighting)\nEstimated cell values may not necessarily match input point values"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#kriging",
+    "href": "Lecture_8/lecture_8.html#kriging",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Kriging",
+    "text": "Kriging\n\n\n\nComes from the field of geostatistics and also leverages information from neighboring points\nBut also incorporates information from underlying spatial structure or variation within data, using the semivariogram"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#spline",
+    "href": "Lecture_8/lecture_8.html#spline",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Spline",
+    "text": "Spline\n\n\n\nFits a surface to the input set of points, such that the surface passes through each point value with minimum curvature\nResults in a relatively smooth surface"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#things-to-consider",
+    "href": "Lecture_8/lecture_8.html#things-to-consider",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Things to consider",
+    "text": "Things to consider\n\n\n\nOutput cell size\nDetermination of neighborhood\n\nSearch radius\nNearest neighbors"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#density-estimation-1",
+    "href": "Lecture_8/lecture_8.html#density-estimation-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Density Estimation",
+    "text": "Density Estimation\n\nWith density estimation, we also start with a set of points\n\nThese may be simple points (e.g., crime occurrences) or points with data associated with them (e.g., cities with a population attribute)\n\nIn this case, though, we are looking for alternative ways to visualize and measure the density of points\nThis can be useful for:\n\nHot spot identification\nAlternatives to choropleth mapping"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#density-estimation-2",
+    "href": "Lecture_8/lecture_8.html#density-estimation-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Density Estimation",
+    "text": "Density Estimation"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#density-estimation-3",
+    "href": "Lecture_8/lecture_8.html#density-estimation-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Density Estimation",
+    "text": "Density Estimation\n\n\n\nConsider the usual case, where we reference counts of occurrences by some spatial unit and/or by area\nHere, the darker the polygon, the higher the point count, which can be problematic:\n\nDependent on choice of spatial unit\nAssumes that points immediately outside the unit have no impact\n\nAn alternative is to create a surface that estimates the density of points across the study area\nWe’ll talk about two methods:\n\nPoint Density\nKernel Density Estimation"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#point-density",
+    "href": "Lecture_8/lecture_8.html#point-density",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Point Density",
+    "text": "Point Density\n\n\n\nThe study area is rasterized and each cell is given a neighborhood. We can then count the number of points that fall within the neighborhood for each cell.\nThis results in a smooth surface\nIn ArcMap, the neighborhood can take various shapes."
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#kernel-density",
+    "href": "Lecture_8/lecture_8.html#kernel-density",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Kernel Density",
+    "text": "Kernel Density\n\n\n\nThe issue with regular point density is that each point is weighted equally within the neighborhood\n\nPoints on the edge of the neighborhood count just as much towards density as points that are located right at the center of the neighborhood\n\nKernel density methods place a kernel of a particular shape and of a particular bandwidth over each point and distribute its value across the kernel\nThis kernel is like the neighborhood, except that it surrounds the points and distributes their value underneath the curve\n\nCell densities are then the sum of the kernel intersections that occur"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#kernel-density-1",
+    "href": "Lecture_8/lecture_8.html#kernel-density-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Kernel Density",
+    "text": "Kernel Density\n\nResults will depend on cell size and bandwidth (or radius)\n\nLarger cell sizes will be grainier\nLarger radii will result in a smoother surface"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#density-estimation-4",
+    "href": "Lecture_8/lecture_8.html#density-estimation-4",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Density estimation",
+    "text": "Density estimation\n\n\n\nThings to think about:\n\nCell size\nProcessing environment\nBandwidth\nKernel function (shape of the kernel)\nAdaptive v. static bandwidth"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#hex-maps-1",
+    "href": "Lecture_8/lecture_8.html#hex-maps-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Hex Maps",
+    "text": "Hex Maps\nPubs and Bars in the UK\n\nSource: https://constituencies.open-innovations.org/themes/society/pubs/"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#hex-mapswhy",
+    "href": "Lecture_8/lecture_8.html#hex-mapswhy",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Hex Maps…why?",
+    "text": "Hex Maps…why?\n\nLots of advantages\n\nUniform representation of space\nDeals with problem of irregular polygons\nMakes it easier to compare densities across units\nHelps with intuitive distance understanding\n\nPlus: they just look really cool"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#how-do-we-do-it",
+    "href": "Lecture_8/lecture_8.html#how-do-we-do-it",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How do we do it?",
+    "text": "How do we do it?\n\nStart with count data — points\n\nLike people, reported crimes, Airbnbs,…or pubs\n\nHexagons (or other regular tessellations, like squares) are simply polygons\n\nAnd we know what to do with points and polygons (count points in polygons and visualize)\n\nSo we just need to know how to create our own polygons"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#creating-our-own-gridstessellations",
+    "href": "Lecture_8/lecture_8.html#creating-our-own-gridstessellations",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Creating our own grids/tessellations",
+    "text": "Creating our own grids/tessellations\n\nUseful for generating uniform polygons as inputs for spatial joins\nOvercomes shortcomings of administrative geographies which can vary considerably in size\nAlso useful for visualizing data in an appealing way\nIn ArcGIS Pro: Generate Tessellation (in data Management)\nLots of choices for size and shape of output polygons (e.g., hexagons, squares, diamonds, triangles)"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#creating-our-own-gridstessellations-1",
+    "href": "Lecture_8/lecture_8.html#creating-our-own-gridstessellations-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Creating our own grids/tessellations",
+    "text": "Creating our own grids/tessellations\n\nWhat could we do to improve this?"
   },
   {
     "objectID": "Lecture_6/lecture_6.html#section-1",
