@@ -19,7 +19,12 @@ format:
 
 ##
 
-![](images/lanternfly_map.png){alt="lantern fly map"}
+![](images/lanternfly_map.png){fig-align="center" alt="lantern fly map"}
+
+## More #30DayMapChallenge
+
+![](images/day10.jpeg){fig-align="center" alt="run map" .center}
+
 
 ## Today's agenda
 
@@ -29,9 +34,17 @@ format:
   - A raster reminder
   - Interpolation, kernel density, and hex maps
 - Exam: Next week!!!
-  - In two parts: theoretical/essay + practical
 
-## Raster Reminder
+## Exam logistics
+
+- Take home!
+- Exam and data will go live on Canvas at 10am Tuesday (17th)
+  - Due **10am Wednesday** (18th)
+- Designed to take 2.5 hours
+- Combination of essay/short answer, analysis, and mapping
+- NO ROBOTS allowed, but open everything else
+
+## Raster reminder
 
 - What are they?
 
@@ -41,6 +54,7 @@ format:
 - Rasters are the "other spatial data model," along with vector (points, lines, and polygons)
   - Rasters are particularly useful for continuous data – surfaces like elevation or precipitation
 - Rasters have coordinate systems and projections, just like the vector data model
+- So many analysis options with rasters. See readings, especially Price!
 
 ## Important info about rasters
 
@@ -97,6 +111,10 @@ format:
 
 :::: {.columns}
 ::: {.column width="50%"}
+
+\
+\
+
 - Uses values of neighboring points to estimate values for a grid cell
 - Points located further away carry less weight than points close by (hence inverse distance weighting)
 - Estimated cell values may not necessarily match input point values
@@ -112,6 +130,10 @@ format:
 
 :::: {.columns}
 ::: {.column width="50%"}
+
+\
+\
+
 - Comes from the field of geostatistics and also leverages information from neighboring points
 - But also incorporates information from underlying spatial structure or variation within data, using the semivariogram
 :::
@@ -126,6 +148,10 @@ format:
 
 :::: {.columns}
 ::: {.column width="50%"}
+
+\
+\
+
 - Fits a surface to the input set of points, such that the surface passes through each point value with minimum curvature
 - Results in a relatively smooth surface
 :::
@@ -139,8 +165,11 @@ format:
 ## Things to consider
 
 :::: {.columns}
-
 ::: {.column width="50%}
+
+\
+\
+
 - Output cell size
 - Determination of neighborhood
   - Search radius
@@ -213,7 +242,7 @@ format:
 
 :::: {.columns}
 ::: {.column width="60%"}
-- The issue with regular point density is that each point is weighted equally within the neighborhood
+- An issue with regular point density is that each point is weighted equally within the neighborhood
   - Points on the edge of the neighborhood count just as much towards density as points that are located right at the center of the neighborhood
 - Kernel density methods place a kernel of a particular shape and of a particular bandwidth over each point and distribute its value across the kernel
 - This kernel is like the neighborhood, except that it surrounds the points and distributes their value underneath the curve
@@ -287,6 +316,6 @@ Pubs and Bars in the UK
 
 ## Creating our own grids/tessellations
 
-![](images/image18.png){alt="Screenshot of map"}
+![](images/image18.png){fig-align="center" alt="Screenshot of map"}
 
 What could we do to improve this?

@@ -910,25 +910,39 @@
     "text": "Source: https://xkcd.com/1138/"
   },
   {
+    "objectID": "Lecture_8/lecture_8.html#more-30daymapchallenge",
+    "href": "Lecture_8/lecture_8.html#more-30daymapchallenge",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "More #30DayMapChallenge",
+    "text": "More #30DayMapChallenge"
+  },
+  {
     "objectID": "Lecture_8/lecture_8.html#todays-agenda",
     "href": "Lecture_8/lecture_8.html#todays-agenda",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Today’s agenda",
-    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nProject Lit Review comments\nLecture:\n\nA raster reminder\nInterpolation, kernel density, and hex maps\n\nExam: Next week!!!\n\nIn two parts: theoretical/essay + practical"
+    "text": "Today’s agenda\n\nGeneral housekeeping: Any Questions?\nProject Lit Review comments\nLecture:\n\nA raster reminder\nInterpolation, kernel density, and hex maps\n\nExam: Next week!!!"
+  },
+  {
+    "objectID": "Lecture_8/lecture_8.html#exam-logistics",
+    "href": "Lecture_8/lecture_8.html#exam-logistics",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Exam logistics",
+    "text": "Exam logistics\n\nTake home!\nExam and data will go live on Canvas at 10am Tuesday (17th)\n\nDue 10am Wednesday (18th)\n\nDesigned to take 2.5 hours\nCombination of essay/short answer, analysis, and mapping\nNO ROBOTS allowed, but open everything else"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#raster-reminder",
     "href": "Lecture_8/lecture_8.html#raster-reminder",
     "title": "Principles & Methods of Geographic Information Systems",
-    "section": "Raster Reminder",
-    "text": "Raster Reminder\n\nWhat are they?"
+    "section": "Raster reminder",
+    "text": "Raster reminder\n\nWhat are they?"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#raster-reminder-1",
     "href": "Lecture_8/lecture_8.html#raster-reminder-1",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Raster Reminder",
-    "text": "Raster Reminder\n\nWhat are they?\nRasters are the “other spatial data model,” along with vector (points, lines, and polygons)\n\nRasters are particularly useful for continuous data – surfaces like elevation or precipitation\n\nRasters have coordinate systems and projections, just like the vector data model"
+    "text": "Raster Reminder\n\nWhat are they?\nRasters are the “other spatial data model,” along with vector (points, lines, and polygons)\n\nRasters are particularly useful for continuous data – surfaces like elevation or precipitation\n\nRasters have coordinate systems and projections, just like the vector data model\nSo many analysis options with rasters. See readings, especially Price!"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#important-info-about-rasters",
@@ -970,28 +984,28 @@
     "href": "Lecture_8/lecture_8.html#inverse-distance-weighting",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Inverse Distance Weighting",
-    "text": "Inverse Distance Weighting\n\n\n\nUses values of neighboring points to estimate values for a grid cell\nPoints located further away carry less weight than points close by (hence inverse distance weighting)\nEstimated cell values may not necessarily match input point values"
+    "text": "Inverse Distance Weighting\n\n\n\n\n\n\nUses values of neighboring points to estimate values for a grid cell\nPoints located further away carry less weight than points close by (hence inverse distance weighting)\nEstimated cell values may not necessarily match input point values"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#kriging",
     "href": "Lecture_8/lecture_8.html#kriging",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Kriging",
-    "text": "Kriging\n\n\n\nComes from the field of geostatistics and also leverages information from neighboring points\nBut also incorporates information from underlying spatial structure or variation within data, using the semivariogram"
+    "text": "Kriging\n\n\n\n\n\n\nComes from the field of geostatistics and also leverages information from neighboring points\nBut also incorporates information from underlying spatial structure or variation within data, using the semivariogram"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#spline",
     "href": "Lecture_8/lecture_8.html#spline",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Spline",
-    "text": "Spline\n\n\n\nFits a surface to the input set of points, such that the surface passes through each point value with minimum curvature\nResults in a relatively smooth surface"
+    "text": "Spline\n\n\n\n\n\n\nFits a surface to the input set of points, such that the surface passes through each point value with minimum curvature\nResults in a relatively smooth surface"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#things-to-consider",
     "href": "Lecture_8/lecture_8.html#things-to-consider",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Things to consider",
-    "text": "Things to consider\n\n\n\nOutput cell size\nDetermination of neighborhood\n\nSearch radius\nNearest neighbors"
+    "text": "Things to consider\n\n\n\n\n\n\nOutput cell size\nDetermination of neighborhood\n\nSearch radius\nNearest neighbors"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#density-estimation-1",
@@ -1026,7 +1040,7 @@
     "href": "Lecture_8/lecture_8.html#kernel-density",
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Kernel Density",
-    "text": "Kernel Density\n\n\n\nThe issue with regular point density is that each point is weighted equally within the neighborhood\n\nPoints on the edge of the neighborhood count just as much towards density as points that are located right at the center of the neighborhood\n\nKernel density methods place a kernel of a particular shape and of a particular bandwidth over each point and distribute its value across the kernel\nThis kernel is like the neighborhood, except that it surrounds the points and distributes their value underneath the curve\n\nCell densities are then the sum of the kernel intersections that occur"
+    "text": "Kernel Density\n\n\n\nAn issue with regular point density is that each point is weighted equally within the neighborhood\n\nPoints on the edge of the neighborhood count just as much towards density as points that are located right at the center of the neighborhood\n\nKernel density methods place a kernel of a particular shape and of a particular bandwidth over each point and distribute its value across the kernel\nThis kernel is like the neighborhood, except that it surrounds the points and distributes their value underneath the curve\n\nCell densities are then the sum of the kernel intersections that occur"
   },
   {
     "objectID": "Lecture_8/lecture_8.html#kernel-density-1",
