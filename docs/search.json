@@ -585,7 +585,7 @@
     "href": "index.html",
     "title": "PSTC 1340: Principles & Methods of GIS",
     "section": "",
-    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 6\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 7\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 8\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Lecture slides for PSTC 1340, Fall 2026:\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 1: Welcome!\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 2\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 3\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 4\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 5\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 6\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 7\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 8\n\n\n\n\n\n\n\n\n\n\nPrinciples & Methods of Geographic Information Systems\n\n\nLecture 9\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Lecture_1/lecture_1.html#todays-agenda",
@@ -726,6 +726,237 @@
     "title": "Principles & Methods of Geographic Information Systems",
     "section": "Testing Out Our Work Environment",
     "text": "Testing Out Our Work Environment\n\n\nGetting set up in MyApps → ArcGIS Pro\n\n\nFrom our Canvas page:\n\nDownload lab data folder (zipped; named “GIS_Intro”)\nSave to desktop\nUnzip\nOpen ArcGIS Pro\nYour unzipped data folder should be called GIS_Intro"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#section",
+    "href": "Lecture_9/Lecture_9.html#section",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Source: https://xkcd.com/461/"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#todays-agenda",
+    "href": "Lecture_9/Lecture_9.html#todays-agenda",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Today’s agenda",
+    "text": "Today’s agenda\n\nGeneral housekeeping: Happy Thanksgiving!\nDon’t forget poster uploads! Email me with any questions!\nLecture:\n\nFundamentals basics of optimization and network analysis"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#what-is-network-analysis",
+    "href": "Lecture_9/Lecture_9.html#what-is-network-analysis",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "What is Network Analysis?",
+    "text": "What is Network Analysis?\n\nBasic:\n\nHow long will it take me to get from Point A to Point B?\nWhat is the shortest path from A to B?\n\nMore complex:\n\nIf I have 10 errands to run today, what is the most efficient route?\nIf water contamination occurs in one part of the city, which neighborhoods/houses will be affected?\nWhat is the closest library to my house? (Note: we already know how to calculate this, using straight-line distance)"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#networks",
+    "href": "Lecture_9/Lecture_9.html#networks",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Networks",
+    "text": "Networks\n\nA network involves:\n\nMovement of something: people, goods, information\nTransferal of this “something” along designated paths\n\nSo, different from the way in which we imagine an airplane flying\nOr a pollutant moving through a body of water or air\n\n\nThese paths are visualized as lines\n\nRoads, power grids, water mains"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#networks-versus-lines",
+    "href": "Lecture_9/Lecture_9.html#networks-versus-lines",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Networks versus Lines",
+    "text": "Networks versus Lines\n\nA network is more than just lines\n\nIn our line feature classes, there is no explicit connectivity specified\n\nSo we have to build a network, starting with our lines, e.g. roads"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#networks-1",
+    "href": "Lecture_9/Lecture_9.html#networks-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Networks",
+    "text": "Networks\n\nConstructed of:\n\nEdges: line segments\nJunctions: intersections\n\nBoth of these can be set as “disabled” or enabled” in a utility network"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#types-of-networks",
+    "href": "Lecture_9/Lecture_9.html#types-of-networks",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Types of Networks",
+    "text": "Types of Networks\n\nTransportation Networks\n\n“Undirected” network\nTraffic/People can travel wherever they like throughout the network\n\nUtility Networks\n\n“Directed” network\nFlow through the network moves in specified directions\n\nThink about water or electricity\n\nA “source” introduces material into the network and it travels to a “sink”"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#optimization",
+    "href": "Lecture_9/Lecture_9.html#optimization",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Optimization",
+    "text": "Optimization\n\nBest location for a set of points\n\n“p-median problem” – seeking the best location for a set of p facilities, such that distance from each point to the closest facility is minimized\n\nSchool location, e.g.\n\n“Coverage problem” – seeking to minimize the furthest distance traveled\n\nFire station location, e.g.\n\n“Location-Allocation” – We’re not only trying to locate facilities, but also allocate demand for each facility"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#analysis-considerations",
+    "href": "Lecture_9/Lecture_9.html#analysis-considerations",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Analysis Considerations",
+    "text": "Analysis Considerations\n\nIs the goal to maximize coverage?\n\nSeeks to locate facilities such that the furthest distance traveled is minimized or falls within a particular cutoff.\nCoverage maximization is used when it is important that even the longest distance traveled between demand point and facility meet a particular threshold.\n\nAgain: Fire station locations\n\n\nIs the goal to minimize total cost or impedance?\n\nThis is the p-median problem.\nObject is to locate facilities such that the total, weighted aggregate travel is minimized.\nPoint of Minimum Aggregate Travel (MAT) minimizes the total burden on demand locations—whether households or businesses.\nOften used in situations in which public services such as libraries are being located."
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#analysis-considerations-1",
+    "href": "Lecture_9/Lecture_9.html#analysis-considerations-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Analysis Considerations",
+    "text": "Analysis Considerations\n\nIs the goal to locate as few facilities as possible?\n\nPerhaps building the facilities will be expensive. If so, the goal may be to locate as few facilities as possible to still meet coverage requirements.\nWith this option, the GIS will allocate as much demand as possible to the fewest potential locations.\n\nIs the goal to secure a certain market share, given the locations of competitors?\n\nThis chooses locations with regard to existing competitor locations and seeks to either maximize or ensure a certain market share.\nDepending on competitor and facility location, a larger or smaller share of the market will be allocated to the potential facilities.\nThe aim of the analysis is to place them such that market share is maximized (or reaches some predetermined threshold)."
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#more-optimization",
+    "href": "Lecture_9/Lecture_9.html#more-optimization",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "More Optimization",
+    "text": "More Optimization\n\nService Area calculation"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#even-more-optimization",
+    "href": "Lecture_9/Lecture_9.html#even-more-optimization",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Even More Optimization",
+    "text": "Even More Optimization\n\nRouting on a network\n\n“Shortest path” – The best path through a network that minimizes distance or travel time\n\nGoogle Maps direction, e.g."
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#and-even-more-optimization",
+    "href": "Lecture_9/Lecture_9.html#and-even-more-optimization",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "…and Even More Optimization",
+    "text": "…and Even More Optimization\n\n“Traveling Salesman Problem” (TSP) – Seeks the best ordering of a set of stops to minimize total distance traveled\n\nMy milkman, e.g.\nIf there are n places to be visited including home base, then there are (n-1)! possible tours to choose from\n\nOr, really, (n-1)!/2, since it doesn’t matter if a given tour is done forwards or backwards.\n\nLarge n problem and the use of heuristics"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#optimization-redux",
+    "href": "Lecture_9/Lecture_9.html#optimization-redux",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Optimization, redux",
+    "text": "Optimization, redux\n\nOptimum paths - best paths in continuous space\n\nLocating highways or power lines, for example\nRouting airplane flights\n\nThese are often solved using a raster, where each cell contains a friction value – cost or time associated with crossing the cell\n\nGIS then finds the least-cost path\n\nWe can differentiate between optimal locations with a network or just in continuous space"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#lots-of-functionality",
+    "href": "Lecture_9/Lecture_9.html#lots-of-functionality",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Lots of Functionality",
+    "text": "Lots of Functionality\n\nCalculate routes: shortest route between locations (this is route and distance)\nCreate service areas: like buffers, except area is calculated based on underlying network\nFind closest facility: Identifies the facility, as well as the route to get to it\nCalculate an origin-destination (O-D) matrix\nAnd more!"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro",
+    "href": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Started in ArcGIS Pro",
+    "text": "Getting Started in ArcGIS Pro\n\nFirst off: network analysis is another example of a set of tools that costs credits\n\nTo make sure you don’t use all your credits up on lab work, this week’s lab is more about exposing you to the possibilities.\n\nIt’s possible to generate your own street network for analysis, but easier to rely on ArcGIS Pro"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro-1",
+    "href": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Started in ArcGIS Pro",
+    "text": "Getting Started in ArcGIS Pro\n\nEnsure you’re logged into Brown in ArcGIS Pro (should be automatic)\nLocate “network analysis” in the Analysis tab"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro-2",
+    "href": "Lecture_9/Lecture_9.html#getting-started-in-arcgis-pro-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Getting Started in ArcGIS Pro",
+    "text": "Getting Started in ArcGIS Pro\n\n\n\nClick on the “Network Analysis” option\n\nYou should see a range of options appear\n\nClicking on an option will create a set of network analysis layers in your project"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#routes",
+    "href": "Lecture_9/Lecture_9.html#routes",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Routes",
+    "text": "Routes\n\n\n\nYou should see a set of empty layers populate your map\nYou bring the stops and barriers—that is, these come from your own data or you manually create them"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#routes-1",
+    "href": "Lecture_9/Lecture_9.html#routes-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Routes",
+    "text": "Routes\n\nTo load stops, click on the “Route Layer” option and Import Stops\n\nNote: only import the points that you want to calculate routes for\nFor the lab, for example, you may need to create multiple point layers\nRoutes are calculated in “sequence” order, which is by default the order of locations in your table"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#section-2",
+    "href": "Lecture_9/Lecture_9.html#section-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "",
+    "text": "Driving Route and Distance"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#how-do-we-deal-with-multiple-stops",
+    "href": "Lecture_9/Lecture_9.html#how-do-we-deal-with-multiple-stops",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How do we deal with multiple stops?",
+    "text": "How do we deal with multiple stops?\n\n\n\n\n\n\nDefault is to calculate route using the “sequence field” in Stops layer\nThis calculates route but is not necessarily efficient in terms of stop order!"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#how-do-we-deal-with-multiple-stops-1",
+    "href": "Lecture_9/Lecture_9.html#how-do-we-deal-with-multiple-stops-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How do we deal with multiple stops?",
+    "text": "How do we deal with multiple stops?\n\n\n\nOptions:\n\nUnder sequence we can ask the computer to choose a best order for us\n\nWhen we do this, the sequence order is updated in the attribute table\n\nOr we can edit the attribute table to reorder the sequence of stops"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areas",
+    "href": "Lecture_9/Lecture_9.html#service-areas",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas",
+    "text": "Service Areas\n\n\n\nThese are a bit like buffers, but the output polygons reflect network distance, not straight-line distance\n\nSo, for example, a question like: what share of the population lives within 1km of a Metro station we might prefer a service area to a buffer"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areas-1",
+    "href": "Lecture_9/Lecture_9.html#service-areas-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas",
+    "text": "Service Areas\n\nSimilar structure to routes"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areas-2",
+    "href": "Lecture_9/Lecture_9.html#service-areas-2",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas",
+    "text": "Service Areas"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areas-3",
+    "href": "Lecture_9/Lecture_9.html#service-areas-3",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas",
+    "text": "Service Areas"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areasresults",
+    "href": "Lecture_9/Lecture_9.html#service-areasresults",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas—Results",
+    "text": "Service Areas—Results"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#service-areasresults-1",
+    "href": "Lecture_9/Lecture_9.html#service-areasresults-1",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Service Areas—Results",
+    "text": "Service Areas—Results"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#network-analysisbarriers",
+    "href": "Lecture_9/Lecture_9.html#network-analysisbarriers",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Network Analysis—Barriers",
+    "text": "Network Analysis—Barriers\n\nWhen conducting the types of network analysis described above, we can also load or draw barriers into our network – points, streets, or even areas that the calculated route should not use:\n\nPoint barriers can be used to prevent a route using a particular part of a street segment\nLine barriers will block routing anywhere the line crosses\nArea barriers take entire neighborhoods out of play in calculating distances or routes"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#how-it-looks",
+    "href": "Lecture_9/Lecture_9.html#how-it-looks",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How it looks",
+    "text": "How it looks"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#how-it-works",
+    "href": "Lecture_9/Lecture_9.html#how-it-works",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "How it works",
+    "text": "How it works"
+  },
+  {
+    "objectID": "Lecture_9/Lecture_9.html#things-to-keep-in-mind",
+    "href": "Lecture_9/Lecture_9.html#things-to-keep-in-mind",
+    "title": "Principles & Methods of Geographic Information Systems",
+    "section": "Things to keep in mind",
+    "text": "Things to keep in mind\n\nYou’ll need to specify “cost” – do you want to minimize distance? Time? Is this walking or driving?\nWe’re only scratching the surface of functionality\n\nThere are lots of options available to increase the verisimilitude of networks and the analysis we do with them"
   },
   {
     "objectID": "Lecture_7/lecture_7.html#section",
